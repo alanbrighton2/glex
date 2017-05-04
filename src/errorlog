@@ -1,0 +1,2706 @@
+[zyong@localhost ~]$ ls
+alan            Downloads  Music       pythonCubeAsset.cc             Videos
+CMAkeLists.txt  glex       Pictures    self-assessment-semester2.pdf
+Desktop         glex-1     Public      Spoon-Knife
+Documents       hello.cpp  pyhydra.py  Templates
+[zyong@localhost ~]$ cd alan
+[zyong@localhost alan]$ ls
+configure.ac  LICENCE  m4  Makefile.am  README.md  shaders  src
+[zyong@localhost alan]$ autoreconf -i
+aclocal: installing 'm4/libtool.m4' from '/usr/share/aclocal/libtool.m4'
+aclocal: installing 'm4/ltoptions.m4' from '/usr/share/aclocal/ltoptions.m4'
+aclocal: installing 'm4/ltsugar.m4' from '/usr/share/aclocal/ltsugar.m4'
+aclocal: installing 'm4/ltversion.m4' from '/usr/share/aclocal/ltversion.m4'
+aclocal: installing 'm4/lt~obsolete.m4' from '/usr/share/aclocal/lt~obsolete.m4'
+aclocal: installing 'm4/pkg.m4' from '/usr/share/aclocal/pkg.m4'
+libtoolize: putting auxiliary files in '.'.
+libtoolize: copying file './ltmain.sh'
+configure.ac:7: installing './compile'
+configure.ac:7: installing './config.guess'
+configure.ac:7: installing './config.sub'
+configure.ac:3: installing './install-sh'
+configure.ac:3: installing './missing'
+src/Makefile.am: installing './depcomp'
+[zyong@localhost alan]$ ./configure
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether build environment is sane... yes
+checking for a thread-safe mkdir -p... /usr/bin/mkdir -p
+checking for gawk... gawk
+checking whether make sets $(MAKE)... yes
+checking whether make supports nested variables... yes
+checking build system type... x86_64-unknown-linux-gnu
+checking host system type... x86_64-unknown-linux-gnu
+checking how to print strings... printf
+checking for style of include used by make... GNU
+checking for gcc... gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to accept ISO C89... none needed
+checking whether gcc understands -c and -o together... yes
+checking dependency style of gcc... gcc3
+checking for a sed that does not truncate output... /usr/bin/sed
+checking for grep that handles long lines and -e... /usr/bin/grep
+checking for egrep... /usr/bin/grep -E
+checking for fgrep... /usr/bin/grep -F
+checking for ld used by gcc... /usr/bin/ld
+checking if the linker (/usr/bin/ld) is GNU ld... yes
+checking for BSD- or MS-compatible name lister (nm)... /usr/bin/nm -B
+checking the name lister (/usr/bin/nm -B) interface... BSD nm
+checking whether ln -s works... yes
+checking the maximum length of command line arguments... 1572864
+checking how to convert x86_64-unknown-linux-gnu file names to x86_64-unknown-linux-gnu format... func_convert_file_noop
+checking how to convert x86_64-unknown-linux-gnu file names to toolchain format... func_convert_file_noop
+checking for /usr/bin/ld option to reload object files... -r
+checking for objdump... objdump
+checking how to recognize dependent libraries... pass_all
+checking for dlltool... no
+checking how to associate runtime and link libraries... printf %s\n
+checking for ar... ar
+checking for archiver @FILE support... @
+checking for strip... strip
+checking for ranlib... ranlib
+checking command to parse /usr/bin/nm -B output from gcc object... ok
+checking for sysroot... no
+checking for a working dd... /usr/bin/dd
+checking how to truncate binary pipes... /usr/bin/dd bs=4096 count=1
+checking for mt... no
+checking if : is a manifest tool... no
+checking how to run the C preprocessor... gcc -E
+checking for ANSI C header files... yes
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking for dlfcn.h... yes
+checking for objdir... .libs
+checking if gcc supports -fno-rtti -fno-exceptions... no
+checking for gcc option to produce PIC... -fPIC -DPIC
+checking if gcc PIC flag -fPIC -DPIC works... yes
+checking if gcc static flag -static works... no
+checking if gcc supports -c -o file.o... yes
+checking if gcc supports -c -o file.o... (cached) yes
+checking whether the gcc linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking whether -lc should be explicitly linked in... no
+checking dynamic linker characteristics... GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking whether stripping libraries is possible... yes
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... yes
+checking whether to build static libraries... yes
+checking for g++... g++
+checking whether we are using the GNU C++ compiler... yes
+checking whether g++ accepts -g... yes
+checking dependency style of g++... gcc3
+checking how to run the C++ preprocessor... g++ -E
+checking for ld used by g++... /usr/bin/ld -m elf_x86_64
+checking if the linker (/usr/bin/ld -m elf_x86_64) is GNU ld... yes
+checking whether the g++ linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking for g++ option to produce PIC... -fPIC -DPIC
+checking if g++ PIC flag -fPIC -DPIC works... yes
+checking if g++ static flag -static works... no
+checking if g++ supports -c -o file.o... yes
+checking if g++ supports -c -o file.o... (cached) yes
+checking whether the g++ linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking dynamic linker characteristics... (cached) GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking for Boost headers version >= 0.0.0... yes
+checking for Boost's header version... 1_60
+checking for the toolset name used by Boost for g++... configure: WARNING: could not figure out which toolset name to use for g++
+
+checking boost/program_options.hpp usability... yes
+checking boost/program_options.hpp presence... yes
+checking for boost/program_options.hpp... yes
+checking for the Boost program_options library... yes
+checking glm/glm.hpp usability... yes
+checking glm/glm.hpp presence... yes
+checking for glm/glm.hpp... yes
+checking for pkg-config... /usr/bin/pkg-config
+checking pkg-config is at least version 0.9.0... yes
+checking for gl... yes
+checking for glew... yes
+checking for sdl2... yes
+checking that generated files are newer than configure... done
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating src/Makefile
+config.status: creating shaders/Makefile
+config.status: creating config.h
+config.status: executing depfiles commands
+config.status: executing libtool commands
+[zyong@localhost alan]$ ./src/shaderexample
+bash: ./src/shaderexample: No such file or directory
+[zyong@localhost alan]$ ./src/shaderexample
+bash: ./src/shaderexample: No such file or directory
+[zyong@localhost alan]$ make
+make  all-recursive
+make[1]: Entering directory '/home/zyong/alan'
+Making all in shaders
+make[2]: Entering directory '/home/zyong/alan/shaders'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/zyong/alan/shaders'
+Making all in src
+make[2]: Entering directory '/home/zyong/alan/src'
+depbase=`echo main.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+g++ -DHAVE_CONFIG_H -I. -I..  -DGL_GLEXT_PROTOTYPES -DGL3_PROTOTYPES -std=c++11 -I/usr/include/libdrm -I/usr/include/libdrm -D_REENTRANT -I/usr/include/SDL2    -g -O2 -MT main.o -MD -MP -MF $depbase.Tpo -c -o main.o main.cc &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo GameWorld.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+g++ -DHAVE_CONFIG_H -I. -I..  -DGL_GLEXT_PROTOTYPES -DGL3_PROTOTYPES -std=c++11 -I/usr/include/libdrm -I/usr/include/libdrm -D_REENTRANT -I/usr/include/SDL2    -g -O2 -MT GameWorld.o -MD -MP -MF $depbase.Tpo -c -o GameWorld.o GameWorld.cc &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo GameAssetManager.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+g++ -DHAVE_CONFIG_H -I. -I..  -DGL_GLEXT_PROTOTYPES -DGL3_PROTOTYPES -std=c++11 -I/usr/include/libdrm -I/usr/include/libdrm -D_REENTRANT -I/usr/include/SDL2    -g -O2 -MT GameAssetManager.o -MD -MP -MF $depbase.Tpo -c -o GameAssetManager.o GameAssetManager.cc &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo CubeAsset.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+g++ -DHAVE_CONFIG_H -I. -I..  -DGL_GLEXT_PROTOTYPES -DGL3_PROTOTYPES -std=c++11 -I/usr/include/libdrm -I/usr/include/libdrm -D_REENTRANT -I/usr/include/SDL2    -g -O2 -MT CubeAsset.o -MD -MP -MF $depbase.Tpo -c -o CubeAsset.o CubeAsset.cc &&\
+mv -f $depbase.Tpo $depbase.Po
+/bin/sh ../libtool  --tag=CXX   --mode=link g++  -g -O2   -o shaderexample main.o GameWorld.o GameAssetManager.o CubeAsset.o  -lGL -lGLEW -lGLU -lGL -lSDL2  -lboost_program_options
+libtool: link: g++ -g -O2 -o shaderexample main.o GameWorld.o GameAssetManager.o CubeAsset.o  -lGLEW -lGLU -lGL -lSDL2 -lboost_program_options
+make[2]: Leaving directory '/home/zyong/alan/src'
+make[2]: Entering directory '/home/zyong/alan'
+make[2]: Leaving directory '/home/zyong/alan'
+make[1]: Leaving directory '/home/zyong/alan'
+[zyong@localhost alan]$ /src/shaderexample
+bash: /src/shaderexample: No such file or directory
+[zyong@localhost alan]$ ./src/shaderexample
+[zyong@localhost alan]$ make
+make  all-recursive
+make[1]: Entering directory '/home/zyong/alan'
+Making all in shaders
+make[2]: Entering directory '/home/zyong/alan/shaders'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/zyong/alan/shaders'
+Making all in src
+make[2]: Entering directory '/home/zyong/alan/src'
+ cd .. && /bin/sh /home/zyong/alan/missing automake-1.15 --foreign src/Makefile
+parallel-tests: error: required file './test-driver' not found
+parallel-tests:   'automake --add-missing' can install 'test-driver'
+Makefile:324: recipe for target 'Makefile.in' failed
+make[2]: *** [Makefile.in] Error 1
+make[2]: Leaving directory '/home/zyong/alan/src'
+Makefile:415: recipe for target 'all-recursive' failed
+make[1]: *** [all-recursive] Error 1
+make[1]: Leaving directory '/home/zyong/alan'
+Makefile:347: recipe for target 'all' failed
+make: *** [all] Error 2
+[zyong@localhost alan]$ make check
+Making check in shaders
+make[1]: Entering directory '/home/zyong/alan/shaders'
+make[1]: Nothing to be done for 'check'.
+make[1]: Leaving directory '/home/zyong/alan/shaders'
+Making check in src
+make[1]: Entering directory '/home/zyong/alan/src'
+ cd .. && /bin/sh /home/zyong/alan/missing automake-1.15 --foreign src/Makefile
+parallel-tests: error: required file './test-driver' not found
+parallel-tests:   'automake --add-missing' can install 'test-driver'
+Makefile:324: recipe for target 'Makefile.in' failed
+make[1]: *** [Makefile.in] Error 1
+make[1]: Leaving directory '/home/zyong/alan/src'
+Makefile:415: recipe for target 'check-recursive' failed
+make: *** [check-recursive] Error 1
+[zyong@localhost alan]$ make
+make  all-recursive
+make[1]: Entering directory '/home/zyong/alan'
+Making all in shaders
+make[2]: Entering directory '/home/zyong/alan/shaders'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/zyong/alan/shaders'
+Making all in src
+make[2]: Entering directory '/home/zyong/alan/src'
+ cd .. && /bin/sh /home/zyong/alan/missing automake-1.15 --foreign src/Makefile
+parallel-tests: error: required file './test-driver' not found
+parallel-tests:   'automake --add-missing' can install 'test-driver'
+Makefile:324: recipe for target 'Makefile.in' failed
+make[2]: *** [Makefile.in] Error 1
+make[2]: Leaving directory '/home/zyong/alan/src'
+Makefile:415: recipe for target 'all-recursive' failed
+make[1]: *** [all-recursive] Error 1
+make[1]: Leaving directory '/home/zyong/alan'
+Makefile:347: recipe for target 'all' failed
+make: *** [all] Error 2
+[zyong@localhost alan]$ make
+make  all-recursive
+make[1]: Entering directory '/home/zyong/alan'
+Making all in shaders
+make[2]: Entering directory '/home/zyong/alan/shaders'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/zyong/alan/shaders'
+Making all in src
+make[2]: Entering directory '/home/zyong/alan/src'
+ cd .. && /bin/sh /home/zyong/alan/missing automake-1.15 --foreign src/Makefile
+parallel-tests: error: required file './test-driver' not found
+parallel-tests:   'automake --add-missing' can install 'test-driver'
+Makefile:324: recipe for target 'Makefile.in' failed
+make[2]: *** [Makefile.in] Error 1
+make[2]: Leaving directory '/home/zyong/alan/src'
+Makefile:415: recipe for target 'all-recursive' failed
+make[1]: *** [all-recursive] Error 1
+make[1]: Leaving directory '/home/zyong/alan'
+Makefile:347: recipe for target 'all' failed
+make: *** [all] Error 2
+[zyong@localhost alan]$ make
+make  all-recursive
+make[1]: Entering directory '/home/zyong/alan'
+Making all in shaders
+make[2]: Entering directory '/home/zyong/alan/shaders'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/zyong/alan/shaders'
+Making all in src
+make[2]: Entering directory '/home/zyong/alan/src'
+ cd .. && /bin/sh /home/zyong/alan/missing automake-1.15 --foreign src/Makefile
+parallel-tests: error: required file './test-driver' not found
+parallel-tests:   'automake --add-missing' can install 'test-driver'
+Makefile:324: recipe for target 'Makefile.in' failed
+make[2]: *** [Makefile.in] Error 1
+make[2]: Leaving directory '/home/zyong/alan/src'
+Makefile:415: recipe for target 'all-recursive' failed
+make[1]: *** [all-recursive] Error 1
+make[1]: Leaving directory '/home/zyong/alan'
+Makefile:347: recipe for target 'all' failed
+make: *** [all] Error 2
+[zyong@localhost alan]$ make
+make  all-recursive
+make[1]: Entering directory '/home/zyong/alan'
+Making all in shaders
+make[2]: Entering directory '/home/zyong/alan/shaders'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/zyong/alan/shaders'
+Making all in src
+make[2]: Entering directory '/home/zyong/alan/src'
+ cd .. && /bin/sh /home/zyong/alan/missing automake-1.15 --foreign src/Makefile
+parallel-tests: error: required file './test-driver' not found
+parallel-tests:   'automake --add-missing' can install 'test-driver'
+Makefile:324: recipe for target 'Makefile.in' failed
+make[2]: *** [Makefile.in] Error 1
+make[2]: Leaving directory '/home/zyong/alan/src'
+Makefile:415: recipe for target 'all-recursive' failed
+make[1]: *** [all-recursive] Error 1
+make[1]: Leaving directory '/home/zyong/alan'
+Makefile:347: recipe for target 'all' failed
+make: *** [all] Error 2
+[zyong@localhost alan]$ make
+make  all-recursive
+make[1]: Entering directory '/home/zyong/alan'
+Making all in shaders
+make[2]: Entering directory '/home/zyong/alan/shaders'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/zyong/alan/shaders'
+Making all in src
+make[2]: Entering directory '/home/zyong/alan/src'
+ cd .. && /bin/sh /home/zyong/alan/missing automake-1.15 --foreign src/Makefile
+parallel-tests: error: required file './test-driver' not found
+parallel-tests:   'automake --add-missing' can install 'test-driver'
+Makefile:324: recipe for target 'Makefile.in' failed
+make[2]: *** [Makefile.in] Error 1
+make[2]: Leaving directory '/home/zyong/alan/src'
+Makefile:415: recipe for target 'all-recursive' failed
+make[1]: *** [all-recursive] Error 1
+make[1]: Leaving directory '/home/zyong/alan'
+Makefile:347: recipe for target 'all' failed
+make: *** [all] Error 2
+[zyong@localhost alan]$ ./configre
+bash: ./configre: No such file or directory
+[zyong@localhost alan]$ ./configure
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether build environment is sane... yes
+checking for a thread-safe mkdir -p... /usr/bin/mkdir -p
+checking for gawk... gawk
+checking whether make sets $(MAKE)... yes
+checking whether make supports nested variables... yes
+checking build system type... x86_64-unknown-linux-gnu
+checking host system type... x86_64-unknown-linux-gnu
+checking how to print strings... printf
+checking for style of include used by make... GNU
+checking for gcc... gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to accept ISO C89... none needed
+checking whether gcc understands -c and -o together... yes
+checking dependency style of gcc... gcc3
+checking for a sed that does not truncate output... /usr/bin/sed
+checking for grep that handles long lines and -e... /usr/bin/grep
+checking for egrep... /usr/bin/grep -E
+checking for fgrep... /usr/bin/grep -F
+checking for ld used by gcc... /usr/bin/ld
+checking if the linker (/usr/bin/ld) is GNU ld... yes
+checking for BSD- or MS-compatible name lister (nm)... /usr/bin/nm -B
+checking the name lister (/usr/bin/nm -B) interface... BSD nm
+checking whether ln -s works... yes
+checking the maximum length of command line arguments... 1572864
+checking how to convert x86_64-unknown-linux-gnu file names to x86_64-unknown-linux-gnu format... func_convert_file_noop
+checking how to convert x86_64-unknown-linux-gnu file names to toolchain format... func_convert_file_noop
+checking for /usr/bin/ld option to reload object files... -r
+checking for objdump... objdump
+checking how to recognize dependent libraries... pass_all
+checking for dlltool... no
+checking how to associate runtime and link libraries... printf %s\n
+checking for ar... ar
+checking for archiver @FILE support... @
+checking for strip... strip
+checking for ranlib... ranlib
+checking command to parse /usr/bin/nm -B output from gcc object... ok
+checking for sysroot... no
+checking for a working dd... /usr/bin/dd
+checking how to truncate binary pipes... /usr/bin/dd bs=4096 count=1
+checking for mt... no
+checking if : is a manifest tool... no
+checking how to run the C preprocessor... gcc -E
+checking for ANSI C header files... yes
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking for dlfcn.h... yes
+checking for objdir... .libs
+checking if gcc supports -fno-rtti -fno-exceptions... no
+checking for gcc option to produce PIC... -fPIC -DPIC
+checking if gcc PIC flag -fPIC -DPIC works... yes
+checking if gcc static flag -static works... no
+checking if gcc supports -c -o file.o... yes
+checking if gcc supports -c -o file.o... (cached) yes
+checking whether the gcc linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking whether -lc should be explicitly linked in... no
+checking dynamic linker characteristics... GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking whether stripping libraries is possible... yes
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... yes
+checking whether to build static libraries... yes
+checking for g++... g++
+checking whether we are using the GNU C++ compiler... yes
+checking whether g++ accepts -g... yes
+checking dependency style of g++... gcc3
+checking how to run the C++ preprocessor... g++ -E
+checking for ld used by g++... /usr/bin/ld -m elf_x86_64
+checking if the linker (/usr/bin/ld -m elf_x86_64) is GNU ld... yes
+checking whether the g++ linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking for g++ option to produce PIC... -fPIC -DPIC
+checking if g++ PIC flag -fPIC -DPIC works... yes
+checking if g++ static flag -static works... no
+checking if g++ supports -c -o file.o... yes
+checking if g++ supports -c -o file.o... (cached) yes
+checking whether the g++ linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking dynamic linker characteristics... (cached) GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking for Boost headers version >= 0.0.0... yes
+checking for Boost's header version... 1_60
+checking for the toolset name used by Boost for g++... configure: WARNING: could not figure out which toolset name to use for g++
+
+checking boost/program_options.hpp usability... yes
+checking boost/program_options.hpp presence... yes
+checking for boost/program_options.hpp... yes
+checking for the Boost program_options library... yes
+checking glm/glm.hpp usability... yes
+checking glm/glm.hpp presence... yes
+checking for glm/glm.hpp... yes
+checking for pkg-config... /usr/bin/pkg-config
+checking pkg-config is at least version 0.9.0... yes
+checking for gl... yes
+checking for glew... yes
+checking for sdl2... yes
+checking that generated files are newer than configure... done
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating src/Makefile
+config.status: creating shaders/Makefile
+config.status: creating config.h
+config.status: config.h is unchanged
+config.status: executing depfiles commands
+config.status: executing libtool commands
+[zyong@localhost alan]$ make
+make  all-recursive
+make[1]: Entering directory '/home/zyong/alan'
+Making all in shaders
+make[2]: Entering directory '/home/zyong/alan/shaders'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/zyong/alan/shaders'
+Making all in src
+make[2]: Entering directory '/home/zyong/alan/src'
+ cd .. && /bin/sh /home/zyong/alan/missing automake-1.15 --foreign src/Makefile
+parallel-tests: error: required file './test-driver' not found
+parallel-tests:   'automake --add-missing' can install 'test-driver'
+Makefile:324: recipe for target 'Makefile.in' failed
+make[2]: *** [Makefile.in] Error 1
+make[2]: Leaving directory '/home/zyong/alan/src'
+Makefile:415: recipe for target 'all-recursive' failed
+make[1]: *** [all-recursive] Error 1
+make[1]: Leaving directory '/home/zyong/alan'
+Makefile:347: recipe for target 'all' failed
+make: *** [all] Error 2
+[zyong@localhost alan]$ autoreconf -i
+parallel-tests: installing './test-driver'
+[zyong@localhost alan]$ ./test-driver
+./test-driver: the following mandatory options are missing: --test-name --log-file --trs-file
+Usage:
+  test-driver --test-name=NAME --log-file=PATH --trs-file=PATH
+              [--expect-failure={yes|no}] [--color-tests={yes|no}]
+              [--enable-hard-errors={yes|no}] [--]
+              TEST-SCRIPT [TEST-SCRIPT-ARGUMENTS]
+The '--test-name', '--log-file' and '--trs-file' options are mandatory.
+[zyong@localhost alan]$ cd ../
+[zyong@localhost ~]$ ls
+alan            Downloads  Music       pythonCubeAsset.cc             Videos
+CMAkeLists.txt  glex       Pictures    self-assessment-semester2.pdf
+Desktop         glex-1     Public      Spoon-Knife
+Documents       hello.cpp  pyhydra.py  Templates
+[zyong@localhost ~]$ cd glex
+[zyong@localhost glex]$ make
+make  all-recursive
+make[1]: Entering directory '/home/zyong/glex'
+Making all in shaders
+make[2]: Entering directory '/home/zyong/glex/shaders'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/zyong/glex/shaders'
+Making all in src
+make[2]: Entering directory '/home/zyong/glex/src'
+ cd .. && /bin/sh /home/zyong/glex/missing automake-1.15 --foreign src/Makefile
+ cd .. && /bin/sh ./config.status src/Makefile depfiles
+config.status: creating src/Makefile
+config.status: executing depfiles commands
+/bin/sh ../libtool  --tag=CXX   --mode=compile g++ -DHAVE_CONFIG_H -I. -I..  -I/usr/include/python3.5.1   -g -O2 -MT libpyhydra_la-pythonCubeAsset.lo -MD -MP -MF .deps/libpyhydra_la-pythonCubeAsset.Tpo -c -o libpyhydra_la-pythonCubeAsset.lo `test -f 'pythonCubeAsset.cc' || echo './'`pythonCubeAsset.cc
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I.. -I/usr/include/python3.5.1 -g -O2 -MT libpyhydra_la-pythonCubeAsset.lo -MD -MP -MF .deps/libpyhydra_la-pythonCubeAsset.Tpo -c pythonCubeAsset.cc  -fPIC -DPIC -o .libs/libpyhydra_la-pythonCubeAsset.o
+In file included from /usr/include/boost/python/detail/prefix.hpp:13:0,
+                 from /usr/include/boost/python/args.hpp:8,
+                 from /usr/include/boost/python.hpp:11,
+                 from pythonCubeAsset.cc:1:
+/usr/include/boost/python/detail/wrap_python.hpp:50:23: fatal error: pyconfig.h: No such file or directory
+ # include <pyconfig.h>
+                       ^
+compilation terminated.
+Makefile:742: recipe for target 'libpyhydra_la-pythonCubeAsset.lo' failed
+make[2]: *** [libpyhydra_la-pythonCubeAsset.lo] Error 1
+make[2]: Leaving directory '/home/zyong/glex/src'
+Makefile:418: recipe for target 'all-recursive' failed
+make[1]: *** [all-recursive] Error 1
+make[1]: Leaving directory '/home/zyong/glex'
+Makefile:350: recipe for target 'all' failed
+make: *** [all] Error 2
+[zyong@localhost glex]$ cd ../
+[zyong@localhost ~]$ cd alan
+[zyong@localhost alan]$ autoreconf -i
+[zyong@localhost alan]$ ./configure
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether build environment is sane... yes
+checking for a thread-safe mkdir -p... /usr/bin/mkdir -p
+checking for gawk... gawk
+checking whether make sets $(MAKE)... yes
+checking whether make supports nested variables... yes
+checking build system type... x86_64-unknown-linux-gnu
+checking host system type... x86_64-unknown-linux-gnu
+checking how to print strings... printf
+checking for style of include used by make... GNU
+checking for gcc... gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to accept ISO C89... none needed
+checking whether gcc understands -c and -o together... yes
+checking dependency style of gcc... gcc3
+checking for a sed that does not truncate output... /usr/bin/sed
+checking for grep that handles long lines and -e... /usr/bin/grep
+checking for egrep... /usr/bin/grep -E
+checking for fgrep... /usr/bin/grep -F
+checking for ld used by gcc... /usr/bin/ld
+checking if the linker (/usr/bin/ld) is GNU ld... yes
+checking for BSD- or MS-compatible name lister (nm)... /usr/bin/nm -B
+checking the name lister (/usr/bin/nm -B) interface... BSD nm
+checking whether ln -s works... yes
+checking the maximum length of command line arguments... 1572864
+checking how to convert x86_64-unknown-linux-gnu file names to x86_64-unknown-linux-gnu format... func_convert_file_noop
+checking how to convert x86_64-unknown-linux-gnu file names to toolchain format... func_convert_file_noop
+checking for /usr/bin/ld option to reload object files... -r
+checking for objdump... objdump
+checking how to recognize dependent libraries... pass_all
+checking for dlltool... no
+checking how to associate runtime and link libraries... printf %s\n
+checking for ar... ar
+checking for archiver @FILE support... @
+checking for strip... strip
+checking for ranlib... ranlib
+checking command to parse /usr/bin/nm -B output from gcc object... ok
+checking for sysroot... no
+checking for a working dd... /usr/bin/dd
+checking how to truncate binary pipes... /usr/bin/dd bs=4096 count=1
+checking for mt... no
+checking if : is a manifest tool... no
+checking how to run the C preprocessor... gcc -E
+checking for ANSI C header files... yes
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking for dlfcn.h... yes
+checking for objdir... .libs
+checking if gcc supports -fno-rtti -fno-exceptions... no
+checking for gcc option to produce PIC... -fPIC -DPIC
+checking if gcc PIC flag -fPIC -DPIC works... yes
+checking if gcc static flag -static works... no
+checking if gcc supports -c -o file.o... yes
+checking if gcc supports -c -o file.o... (cached) yes
+checking whether the gcc linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking whether -lc should be explicitly linked in... no
+checking dynamic linker characteristics... GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking whether stripping libraries is possible... yes
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... yes
+checking whether to build static libraries... yes
+checking for g++... g++
+checking whether we are using the GNU C++ compiler... yes
+checking whether g++ accepts -g... yes
+checking dependency style of g++... gcc3
+checking how to run the C++ preprocessor... g++ -E
+checking for ld used by g++... /usr/bin/ld -m elf_x86_64
+checking if the linker (/usr/bin/ld -m elf_x86_64) is GNU ld... yes
+checking whether the g++ linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking for g++ option to produce PIC... -fPIC -DPIC
+checking if g++ PIC flag -fPIC -DPIC works... yes
+checking if g++ static flag -static works... no
+checking if g++ supports -c -o file.o... yes
+checking if g++ supports -c -o file.o... (cached) yes
+checking whether the g++ linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking dynamic linker characteristics... (cached) GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking for Boost headers version >= 0.0.0... yes
+checking for Boost's header version... 1_60
+checking for the toolset name used by Boost for g++... configure: WARNING: could not figure out which toolset name to use for g++
+
+checking boost/program_options.hpp usability... yes
+checking boost/program_options.hpp presence... yes
+checking for boost/program_options.hpp... yes
+checking for the Boost program_options library... yes
+checking glm/glm.hpp usability... yes
+checking glm/glm.hpp presence... yes
+checking for glm/glm.hpp... yes
+checking for pkg-config... /usr/bin/pkg-config
+checking pkg-config is at least version 0.9.0... yes
+checking for gl... yes
+checking for glew... yes
+checking for sdl2... yes
+checking that generated files are newer than configure... done
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating src/Makefile
+config.status: creating shaders/Makefile
+config.status: creating config.h
+config.status: config.h is unchanged
+config.status: executing depfiles commands
+config.status: executing libtool commands
+[zyong@localhost alan]$ make
+make  all-recursive
+make[1]: Entering directory '/home/zyong/alan'
+Making all in shaders
+make[2]: Entering directory '/home/zyong/alan/shaders'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/zyong/alan/shaders'
+Making all in src
+make[2]: Entering directory '/home/zyong/alan/src'
+depbase=`echo SFBoundingBox.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+g++ -DHAVE_CONFIG_H -I. -I..  -DGL_GLEXT_PROTOTYPES -DGL3_PROTOTYPES -std=c++11 -I/usr/include/libdrm -I/usr/include/libdrm -D_REENTRANT -I/usr/include/SDL2    -g -O2 -MT SFBoundingBox.o -MD -MP -MF $depbase.Tpo -c -o SFBoundingBox.o SFBoundingBox.cc &&\
+mv -f $depbase.Tpo $depbase.Po
+In file included from SFBoundingBox.h:10:0,
+                 from SFBoundingBox.cc:1:
+SFMath.h:22:8: error: prototype for ‘Vector3::Vector3(float, float, float)’ does not match any in class ‘Vector3’
+ inline Vector3::Vector3 (const float x, const float y, const float z) : m_x(x), m_y(y), m_z(z) {}
+        ^~~~~~~
+SFMath.h:10:10: error: candidates are: Vector3::Vector3(const Vector3&)
+   inline Vector3(const Vector3 &);
+          ^~~~~~~
+SFMath.h:9:10: error:                 Vector3::Vector3(float, float)
+   inline Vector3(const float, const float);
+          ^~~~~~~
+SFMath.h: In member function ‘const Vector3 Vector3::operator+(const Vector3&) const’:
+SFMath.h:45:4: error: no matching function for call to ‘Vector3::Vector3(float, float, float)’
+    );
+    ^
+SFMath.h:24:8: note: candidate: Vector3::Vector3(const Vector3&)
+ inline Vector3::Vector3 (const Vector3 &v) : m_x(v.m_x), m_y(v.m_y), m_z(v.m_z) {}
+        ^~~~~~~
+SFMath.h:24:8: note:   candidate expects 1 argument, 3 provided
+SFMath.h:9:10: note: candidate: Vector3::Vector3(float, float)
+   inline Vector3(const float, const float);
+          ^~~~~~~
+SFMath.h:9:10: note:   candidate expects 2 arguments, 3 provided
+SFMath.h: In member function ‘const Vector3 Vector3::operator*(float) const’:
+SFMath.h:49:17: error: expected primary-expression before ‘(’ token
+   return Vector3(
+                 ^
+SFMath.h:52:4: error: expected ‘)’ before ‘m_z’
+    m_z * scalar
+    ^~~
+SFMath.h: At global scope:
+SFMath.h:71:8: error: prototype for ‘Point3::Point3(float, float, float)’ does not match any in class ‘Point3’
+ inline Point3::Point3 (const float x, const float y, const float z) : m_x(x), m_y(y), m_z(z) {}
+        ^~~~~~
+SFMath.h:63:10: error: candidates are: Point3::Point3(const Point3&)
+   inline Point3(const Point3 &);
+          ^~~~~~
+SFMath.h:62:10: error:                 Point3::Point3(const Vector3&)
+   inline Point3(const Vector3 &);
+          ^~~~~~
+SFMath.h:61:10: error:                 Point3::Point3(float, float)
+   inline Point3(const float, const float);
+          ^~~~~~
+SFMath.h: In function ‘const Vector3 xAxis()’:
+SFMath.h:102:34: error: no matching function for call to ‘Vector3::Vector3(float, float, float)’
+   return Vector3(1.0f, 0.0f, 0.0f);
+                                  ^
+SFMath.h:24:8: note: candidate: Vector3::Vector3(const Vector3&)
+ inline Vector3::Vector3 (const Vector3 &v) : m_x(v.m_x), m_y(v.m_y), m_z(v.m_z) {}
+        ^~~~~~~
+SFMath.h:24:8: note:   candidate expects 1 argument, 3 provided
+SFMath.h:9:10: note: candidate: Vector3::Vector3(float, float)
+   inline Vector3(const float, const float);
+          ^~~~~~~
+SFMath.h:9:10: note:   candidate expects 2 arguments, 3 provided
+SFMath.h: In function ‘const Vector3 yAxis()’:
+SFMath.h:106:33: error: no matching function for call to ‘Vector3::Vector3(float, float, double)’
+   return Vector3(0.0f, 1.0f, 0.0);
+                                 ^
+SFMath.h:24:8: note: candidate: Vector3::Vector3(const Vector3&)
+ inline Vector3::Vector3 (const Vector3 &v) : m_x(v.m_x), m_y(v.m_y), m_z(v.m_z) {}
+        ^~~~~~~
+SFMath.h:24:8: note:   candidate expects 1 argument, 3 provided
+SFMath.h:9:10: note: candidate: Vector3::Vector3(float, float)
+   inline Vector3(const float, const float);
+          ^~~~~~~
+SFMath.h:9:10: note:   candidate expects 2 arguments, 3 provided
+SFMath.h: In function ‘const Vector3 zAxis()’:
+SFMath.h:110:33: error: no matching function for call to ‘Vector3::Vector3(float, double, float)’
+   return Vector3(0.0f, 0.0, 1.0f);
+                                 ^
+SFMath.h:24:8: note: candidate: Vector3::Vector3(const Vector3&)
+ inline Vector3::Vector3 (const Vector3 &v) : m_x(v.m_x), m_y(v.m_y), m_z(v.m_z) {}
+        ^~~~~~~
+SFMath.h:24:8: note:   candidate expects 1 argument, 3 provided
+SFMath.h:9:10: note: candidate: Vector3::Vector3(float, float)
+   inline Vector3(const float, const float);
+          ^~~~~~~
+SFMath.h:9:10: note:   candidate expects 2 arguments, 3 provided
+In file included from SFBoundingBox.cc:1:0:
+SFBoundingBox.h: At global scope:
+SFBoundingBox.h:12:20: error: expected unqualified-id before ‘,’ token
+ enum AXIS {X, Y, Z},
+                    ^
+SFBoundingBox.h:14:1: error: expected unqualified-id before ‘class’
+ class SFBoundingBox {
+ ^~~~~
+SFBoundingBox.cc:3:1: error: ‘SFBoundingBox’ does not name a type
+ SFBoundingBox::SFBoundingBox(const Vector3 centre,
+ ^~~~~~~~~~~~~
+SFBoundingBox.cc:13:1: error: ‘SFBoundingBox’ does not name a type
+ SFBoundingBox::~SFBoundingBox() {
+ ^~~~~~~~~~~~~
+SFBoundingBox.cc:20:6: error: ‘SFBoundingBox’ has not been declared
+ void SFBoundingBox::SetCentre(Vector3 & v) {
+      ^~~~~~~~~~~~~
+SFBoundingBox.cc: In function ‘void SetCentre(Vector3&)’:
+SFBoundingBox.cc:21:3: error: ‘centre’ was not declared in this scope
+   centre = make_shared<Vector3>(v);
+   ^~~~~~
+SFBoundingBox.cc: At global scope:
+SFBoundingBox.cc:31:19: error: ‘SFBoundingBox’ has not been declared
+ pair<float,float> SFBoundingBox::projectOntoAxis(const SFBoundingBox & b, enum AXIS axis) {
+                   ^~~~~~~~~~~~~
+SFBoundingBox.cc:31:56: error: ‘SFBoundingBox’ does not name a type
+ pair<float,float> SFBoundingBox::projectOntoAxis(const SFBoundingBox & b, enum AXIS axis) {
+                                                        ^~~~~~~~~~~~~
+SFBoundingBox.cc: In function ‘std::pair<float, float> projectOntoAxis(const int&, AXIS)’:
+SFBoundingBox.cc:37:23: error: request for member ‘extent_x’ in ‘b’, which is of non-class type ‘const int’
+       Vector3 bx = *b.extent_x;
+                       ^~~~~~~~
+SFBoundingBox.cc:38:44: error: request for member ‘centre’ in ‘b’, which is of non-class type ‘const int’
+       lo  = projection( Point2(Vector3(*(b.centre)) + (bx * -1)), xAxis());
+                                            ^~~~~~
+SFBoundingBox.cc:38:64: error: ‘Point2’ was not declared in this scope
+       lo  = projection( Point2(Vector3(*(b.centre)) + (bx * -1)), xAxis());
+                                                                ^
+SFBoundingBox.cc:39:44: error: request for member ‘centre’ in ‘b’, which is of non-class type ‘const int’
+       hi  = projection( Point2(Vector3(*(b.centre)) + bx), xAxis());
+                                            ^~~~~~
+SFBoundingBox.cc:44:23: error: request for member ‘extent_y’ in ‘b’, which is of non-class type ‘const int’
+       Vector3 by = *b.extent_y;
+                       ^~~~~~~~
+SFBoundingBox.cc:45:44: error: request for member ‘centre’ in ‘b’, which is of non-class type ‘const int’
+       lo  = projection( Point2(Vector3(*(b.centre)) + (by * -1)), yAxis());
+                                            ^~~~~~
+SFBoundingBox.cc:45:64: error: ‘Point2’ was not declared in this scope
+       lo  = projection( Point2(Vector3(*(b.centre)) + (by * -1)), yAxis());
+                                                                ^
+SFBoundingBox.cc:46:44: error: request for member ‘centre’ in ‘b’, which is of non-class type ‘const int’
+       hi  = projection( Point2(Vector3(*(b.centre)) + by), yAxis());
+                                            ^~~~~~
+SFBoundingBox.cc:51:23: error: request for member ‘extent_z’ in ‘b’, which is of non-class type ‘const int’
+       Vector3 bz = *b.extent_z;
+                       ^~~~~~~~
+SFBoundingBox.cc:52:44: error: request for member ‘centre’ in ‘b’, which is of non-class type ‘const int’
+       lo  = projection( Point2(Vector3(*(b.centre)) + (bz * -1)), zAxis());
+                                            ^~~~~~
+SFBoundingBox.cc:52:64: error: ‘Point2’ was not declared in this scope
+       lo  = projection( Point2(Vector3(*(b.centre)) + (bz * -1)), zAxis());
+                                                                ^
+SFBoundingBox.cc:53:44: error: request for member ‘centre’ in ‘b’, which is of non-class type ‘const int’
+       hi  = projection( Point2(Vector3(*(b.centre)) + bz), zAxis());
+                                            ^~~~~~
+SFBoundingBox.cc: At global scope:
+SFBoundingBox.cc:61:6: error: ‘SFBoundingBox’ has not been declared
+ bool SFBoundingBox::CollidesWith(const shared_ptr<SFBoundingBox> b) {
+      ^~~~~~~~~~~~~
+SFBoundingBox.cc:61:51: error: ‘SFBoundingBox’ was not declared in this scope
+ bool SFBoundingBox::CollidesWith(const shared_ptr<SFBoundingBox> b) {
+                                                   ^~~~~~~~~~~~~
+SFBoundingBox.cc:61:64: error: template argument 1 is invalid
+ bool SFBoundingBox::CollidesWith(const shared_ptr<SFBoundingBox> b) {
+                                                                ^
+SFBoundingBox.cc: In function ‘bool CollidesWith(int)’:
+SFBoundingBox.cc:62:50: error: invalid use of ‘this’ in non-member function
+   pair<float, float> a_x_proj = projectOntoAxis(*this, X),
+                                                  ^~~~
+SFBoundingBox.cc:67:5: error: ‘b_z_proj’ was not declared in this scope
+     b_z_proj = projectOntoAxis(*b, Z);
+     ^~~~~~~~
+SFBoundingBox.cc:67:33: error: invalid type argument of unary ‘*’ (have ‘int’)
+     b_z_proj = projectOntoAxis(*b, Z);
+                                 ^
+SFBoundingBox.cc:69:31: error: ‘b_x_proj’ was not declared in this scope
+   return (straddles(a_x_proj, b_x_proj)) && (straddles(a_y_proj, b_y_proj) && (straddles(a_z_proj, b_z_proj));
+                               ^~~~~~~~
+SFBoundingBox.cc:69:56: error: ‘a_y_proj’ was not declared in this scope
+   return (straddles(a_x_proj, b_x_proj)) && (straddles(a_y_proj, b_y_proj) && (straddles(a_z_proj, b_z_proj));
+                                                        ^~~~~~~~
+SFBoundingBox.cc:69:66: error: ‘b_y_proj’ was not declared in this scope
+   return (straddles(a_x_proj, b_x_proj)) && (straddles(a_y_proj, b_y_proj) && (straddles(a_z_proj, b_z_proj));
+                                                                  ^~~~~~~~
+SFBoundingBox.cc:69:90: error: ‘a_z_proj’ was not declared in this scope
+ _x_proj, b_x_proj)) && (straddles(a_y_proj, b_y_proj) && (straddles(a_z_proj, b_z_proj));
+                                                                     ^~~~~~~~
+SFBoundingBox.cc:69:110: error: expected ‘)’ before ‘;’ token
+ _x_proj)) && (straddles(a_y_proj, b_y_proj) && (straddles(a_z_proj, b_z_proj));
+                                                                               ^
+SFBoundingBox.cc: At global scope:
+SFBoundingBox.cc:73:40: error: ‘SFBoundingBox’ does not name a type
+ ostream& operator<<(ostream& os, const SFBoundingBox& obj) {
+                                        ^~~~~~~~~~~~~
+SFBoundingBox.cc: In function ‘std::ostream& operator<<(std::ostream&, const int&)’:
+SFBoundingBox.cc:74:22: error: request for member ‘centre’ in ‘obj’, which is of non-class type ‘const int’
+   os << "c:(" << obj.centre->getX() << ", " << obj.centre->getY() << ") w:" << (obj.extent_x->getX()*2) << " h:" << (obj.extent_y->getY()*2);
+                      ^~~~~~
+SFBoundingBox.cc:74:52: error: request for member ‘centre’ in ‘obj’, which is of non-class type ‘const int’
+   os << "c:(" << obj.centre->getX() << ", " << obj.centre->getY() << ") w:" << (obj.extent_x->getX()*2) << " h:" << (obj.extent_y->getY()*2);
+                                                    ^~~~~~
+SFBoundingBox.cc:74:85: error: request for member ‘extent_x’ in ‘obj’, which is of non-class type ‘const int’
+  obj.centre->getX() << ", " << obj.centre->getY() << ") w:" << (obj.extent_x->getX()*2) << " h:" << (obj.extent_y->getY()*2);
+                                                                     ^~~~~~~~
+SFBoundingBox.cc:74:122: error: request for member ‘extent_y’ in ‘obj’, which is of non-class type ‘const int’
+ ntre->getY() << ") w:" << (obj.extent_x->getX()*2) << " h:" << (obj.extent_y->getY()*2);
+                                                                     ^~~~~~~~
+In file included from SFBoundingBox.h:10:0,
+                 from SFBoundingBox.cc:1:
+SFMath.h: At global scope:
+SFMath.h:9:10: warning: inline function ‘Vector3::Vector3(float, float)’ used but never defined
+   inline Vector3(const float, const float);
+          ^~~~~~~
+Makefile:647: recipe for target 'SFBoundingBox.o' failed
+make[2]: *** [SFBoundingBox.o] Error 1
+make[2]: Leaving directory '/home/zyong/alan/src'
+Makefile:415: recipe for target 'all-recursive' failed
+make[1]: *** [all-recursive] Error 1
+make[1]: Leaving directory '/home/zyong/alan'
+Makefile:347: recipe for target 'all' failed
+make: *** [all] Error 2
+[zyong@localhost alan]$ make
+make  all-recursive
+make[1]: Entering directory '/home/zyong/alan'
+Making all in shaders
+make[2]: Entering directory '/home/zyong/alan/shaders'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/zyong/alan/shaders'
+Making all in src
+make[2]: Entering directory '/home/zyong/alan/src'
+depbase=`echo SFBoundingBox.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+g++ -DHAVE_CONFIG_H -I. -I..  -DGL_GLEXT_PROTOTYPES -DGL3_PROTOTYPES -std=c++11 -I/usr/include/libdrm -I/usr/include/libdrm -D_REENTRANT -I/usr/include/SDL2    -g -O2 -MT SFBoundingBox.o -MD -MP -MF $depbase.Tpo -c -o SFBoundingBox.o SFBoundingBox.cc &&\
+mv -f $depbase.Tpo $depbase.Po
+In file included from SFBoundingBox.h:10:0,
+                 from SFBoundingBox.cc:1:
+SFMath.h:22:8: error: prototype for ‘Vector3::Vector3(float, float, float)’ does not match any in class ‘Vector3’
+ inline Vector3::Vector3 (const float x, const float y, const float z) : m_x(x), m_y(y), m_z(z) {}
+        ^~~~~~~
+SFMath.h:10:10: error: candidates are: Vector3::Vector3(const Vector3&)
+   inline Vector3 (const Vector3 &);
+          ^~~~~~~
+SFMath.h:9:10: error:                 Vector3::Vector3(float, float)
+   inline Vector3 (const float, const float);
+          ^~~~~~~
+SFMath.h: In member function ‘const Vector3 Vector3::operator+(const Vector3&) const’:
+SFMath.h:45:4: error: no matching function for call to ‘Vector3::Vector3(float, float, float)’
+    );
+    ^
+SFMath.h:24:8: note: candidate: Vector3::Vector3(const Vector3&)
+ inline Vector3::Vector3 (const Vector3 &v) : m_x(v.m_x), m_y(v.m_y), m_z(v.m_z) {}
+        ^~~~~~~
+SFMath.h:24:8: note:   candidate expects 1 argument, 3 provided
+SFMath.h:9:10: note: candidate: Vector3::Vector3(float, float)
+   inline Vector3 (const float, const float);
+          ^~~~~~~
+SFMath.h:9:10: note:   candidate expects 2 arguments, 3 provided
+SFMath.h: In member function ‘const Vector3 Vector3::operator*(float) const’:
+SFMath.h:49:18: error: expected primary-expression before ‘(’ token
+   return Vector3 (
+                  ^
+SFMath.h:52:11: error: expected ‘)’ before ‘m_z’
+           m_z * scalar
+           ^~~
+SFMath.h: At global scope:
+SFMath.h:71:8: error: prototype for ‘Point3::Point3(float, float, float)’ does not match any in class ‘Point3’
+ inline Point3::Point3 (const float x, const float y, const float z) : m_x(x), m_y(y), m_z(z) {}
+        ^~~~~~
+SFMath.h:63:10: error: candidates are: Point3::Point3(const Point3&)
+   inline Point3 (const Point3 &);
+          ^~~~~~
+SFMath.h:62:10: error:                 Point3::Point3(const Vector3&)
+   inline Point3 (const Vector3 &);
+          ^~~~~~
+SFMath.h:61:10: error:                 Point3::Point3(float, float)
+   inline Point3 (const float, const float);
+          ^~~~~~
+SFMath.h: In function ‘const Vector3 xAxis()’:
+SFMath.h:102:34: error: no matching function for call to ‘Vector3::Vector3(float, float, float)’
+   return Vector3(1.0f, 0.0f, 0.0f);
+                                  ^
+SFMath.h:24:8: note: candidate: Vector3::Vector3(const Vector3&)
+ inline Vector3::Vector3 (const Vector3 &v) : m_x(v.m_x), m_y(v.m_y), m_z(v.m_z) {}
+        ^~~~~~~
+SFMath.h:24:8: note:   candidate expects 1 argument, 3 provided
+SFMath.h:9:10: note: candidate: Vector3::Vector3(float, float)
+   inline Vector3 (const float, const float);
+          ^~~~~~~
+SFMath.h:9:10: note:   candidate expects 2 arguments, 3 provided
+SFMath.h: In function ‘const Vector3 yAxis()’:
+SFMath.h:106:33: error: no matching function for call to ‘Vector3::Vector3(float, float, double)’
+   return Vector3(0.0f, 1.0f, 0.0);
+                                 ^
+SFMath.h:24:8: note: candidate: Vector3::Vector3(const Vector3&)
+ inline Vector3::Vector3 (const Vector3 &v) : m_x(v.m_x), m_y(v.m_y), m_z(v.m_z) {}
+        ^~~~~~~
+SFMath.h:24:8: note:   candidate expects 1 argument, 3 provided
+SFMath.h:9:10: note: candidate: Vector3::Vector3(float, float)
+   inline Vector3 (const float, const float);
+          ^~~~~~~
+SFMath.h:9:10: note:   candidate expects 2 arguments, 3 provided
+SFMath.h: In function ‘const Vector3 zAxis()’:
+SFMath.h:110:33: error: no matching function for call to ‘Vector3::Vector3(float, double, float)’
+   return Vector3(0.0f, 0.0, 1.0f);
+                                 ^
+SFMath.h:24:8: note: candidate: Vector3::Vector3(const Vector3&)
+ inline Vector3::Vector3 (const Vector3 &v) : m_x(v.m_x), m_y(v.m_y), m_z(v.m_z) {}
+        ^~~~~~~
+SFMath.h:24:8: note:   candidate expects 1 argument, 3 provided
+SFMath.h:9:10: note: candidate: Vector3::Vector3(float, float)
+   inline Vector3 (const float, const float);
+          ^~~~~~~
+SFMath.h:9:10: note:   candidate expects 2 arguments, 3 provided
+In file included from SFBoundingBox.cc:1:0:
+SFBoundingBox.h: At global scope:
+SFBoundingBox.h:12:21: error: expected unqualified-id before ‘,’ token
+ enum AXIS {X, Y, Z} ,
+                     ^
+SFBoundingBox.h:14:1: error: expected unqualified-id before ‘class’
+ class SFBoundingBox {
+ ^~~~~
+SFBoundingBox.cc:3:1: error: ‘SFBoundingBox’ does not name a type
+ SFBoundingBox::SFBoundingBox(const Vector3 centre,
+ ^~~~~~~~~~~~~
+SFBoundingBox.cc:13:1: error: ‘SFBoundingBox’ does not name a type
+ SFBoundingBox::~SFBoundingBox() {
+ ^~~~~~~~~~~~~
+SFBoundingBox.cc:20:6: error: ‘SFBoundingBox’ has not been declared
+ void SFBoundingBox::SetCentre(Vector3 & v) {
+      ^~~~~~~~~~~~~
+SFBoundingBox.cc: In function ‘void SetCentre(Vector3&)’:
+SFBoundingBox.cc:21:3: error: ‘centre’ was not declared in this scope
+   centre = make_shared<Vector3>(v);
+   ^~~~~~
+SFBoundingBox.cc: At global scope:
+SFBoundingBox.cc:31:19: error: ‘SFBoundingBox’ has not been declared
+ pair<float,float> SFBoundingBox::projectOntoAxis(const SFBoundingBox & b, enum AXIS axis) {
+                   ^~~~~~~~~~~~~
+SFBoundingBox.cc:31:56: error: ‘SFBoundingBox’ does not name a type
+ pair<float,float> SFBoundingBox::projectOntoAxis(const SFBoundingBox & b, enum AXIS axis) {
+                                                        ^~~~~~~~~~~~~
+SFBoundingBox.cc: In function ‘std::pair<float, float> projectOntoAxis(const int&, AXIS)’:
+SFBoundingBox.cc:37:23: error: request for member ‘extent_x’ in ‘b’, which is of non-class type ‘const int’
+       Vector3 bx = *b.extent_x;
+                       ^~~~~~~~
+SFBoundingBox.cc:38:44: error: request for member ‘centre’ in ‘b’, which is of non-class type ‘const int’
+       lo  = projection( Point2(Vector3(*(b.centre)) + (bx * -1)), xAxis());
+                                            ^~~~~~
+SFBoundingBox.cc:38:64: error: ‘Point2’ was not declared in this scope
+       lo  = projection( Point2(Vector3(*(b.centre)) + (bx * -1)), xAxis());
+                                                                ^
+SFBoundingBox.cc:39:44: error: request for member ‘centre’ in ‘b’, which is of non-class type ‘const int’
+       hi  = projection( Point2(Vector3(*(b.centre)) + bx), xAxis());
+                                            ^~~~~~
+SFBoundingBox.cc:44:23: error: request for member ‘extent_y’ in ‘b’, which is of non-class type ‘const int’
+       Vector3 by = *b.extent_y;
+                       ^~~~~~~~
+SFBoundingBox.cc:45:44: error: request for member ‘centre’ in ‘b’, which is of non-class type ‘const int’
+       lo  = projection( Point2(Vector3(*(b.centre)) + (by * -1)), yAxis());
+                                            ^~~~~~
+SFBoundingBox.cc:45:64: error: ‘Point2’ was not declared in this scope
+       lo  = projection( Point2(Vector3(*(b.centre)) + (by * -1)), yAxis());
+                                                                ^
+SFBoundingBox.cc:46:44: error: request for member ‘centre’ in ‘b’, which is of non-class type ‘const int’
+       hi  = projection( Point2(Vector3(*(b.centre)) + by), yAxis());
+                                            ^~~~~~
+SFBoundingBox.cc:51:23: error: request for member ‘extent_z’ in ‘b’, which is of non-class type ‘const int’
+       Vector3 bz = *b.extent_z;
+                       ^~~~~~~~
+SFBoundingBox.cc:52:44: error: request for member ‘centre’ in ‘b’, which is of non-class type ‘const int’
+       lo  = projection( Point2(Vector3(*(b.centre)) + (bz * -1)), zAxis());
+                                            ^~~~~~
+SFBoundingBox.cc:52:64: error: ‘Point2’ was not declared in this scope
+       lo  = projection( Point2(Vector3(*(b.centre)) + (bz * -1)), zAxis());
+                                                                ^
+SFBoundingBox.cc:53:44: error: request for member ‘centre’ in ‘b’, which is of non-class type ‘const int’
+       hi  = projection( Point2(Vector3(*(b.centre)) + bz), zAxis());
+                                            ^~~~~~
+SFBoundingBox.cc: At global scope:
+SFBoundingBox.cc:61:6: error: ‘SFBoundingBox’ has not been declared
+ bool SFBoundingBox::CollidesWith(const shared_ptr<SFBoundingBox> b) {
+      ^~~~~~~~~~~~~
+SFBoundingBox.cc:61:51: error: ‘SFBoundingBox’ was not declared in this scope
+ bool SFBoundingBox::CollidesWith(const shared_ptr<SFBoundingBox> b) {
+                                                   ^~~~~~~~~~~~~
+SFBoundingBox.cc:61:64: error: template argument 1 is invalid
+ bool SFBoundingBox::CollidesWith(const shared_ptr<SFBoundingBox> b) {
+                                                                ^
+SFBoundingBox.cc: In function ‘bool CollidesWith(int)’:
+SFBoundingBox.cc:62:50: error: invalid use of ‘this’ in non-member function
+   pair<float, float> a_x_proj = projectOntoAxis(*this, X),
+                                                  ^~~~
+SFBoundingBox.cc:67:5: error: ‘b_z_proj’ was not declared in this scope
+     b_z_proj = projectOntoAxis(*b, Z);
+     ^~~~~~~~
+SFBoundingBox.cc:67:33: error: invalid type argument of unary ‘*’ (have ‘int’)
+     b_z_proj = projectOntoAxis(*b, Z);
+                                 ^
+SFBoundingBox.cc:69:31: error: ‘b_x_proj’ was not declared in this scope
+   return (straddles(a_x_proj, b_x_proj)) && (straddles(a_y_proj, b_y_proj) && (straddles(a_z_proj, b_z_proj));
+                               ^~~~~~~~
+SFBoundingBox.cc:69:56: error: ‘a_y_proj’ was not declared in this scope
+   return (straddles(a_x_proj, b_x_proj)) && (straddles(a_y_proj, b_y_proj) && (straddles(a_z_proj, b_z_proj));
+                                                        ^~~~~~~~
+SFBoundingBox.cc:69:66: error: ‘b_y_proj’ was not declared in this scope
+   return (straddles(a_x_proj, b_x_proj)) && (straddles(a_y_proj, b_y_proj) && (straddles(a_z_proj, b_z_proj));
+                                                                  ^~~~~~~~
+SFBoundingBox.cc:69:90: error: ‘a_z_proj’ was not declared in this scope
+ _x_proj, b_x_proj)) && (straddles(a_y_proj, b_y_proj) && (straddles(a_z_proj, b_z_proj));
+                                                                     ^~~~~~~~
+SFBoundingBox.cc:69:110: error: expected ‘)’ before ‘;’ token
+ _x_proj)) && (straddles(a_y_proj, b_y_proj) && (straddles(a_z_proj, b_z_proj));
+                                                                               ^
+SFBoundingBox.cc: At global scope:
+SFBoundingBox.cc:73:40: error: ‘SFBoundingBox’ does not name a type
+ ostream& operator<<(ostream& os, const SFBoundingBox& obj) {
+                                        ^~~~~~~~~~~~~
+SFBoundingBox.cc: In function ‘std::ostream& operator<<(std::ostream&, const int&)’:
+SFBoundingBox.cc:74:22: error: request for member ‘centre’ in ‘obj’, which is of non-class type ‘const int’
+   os << "c:(" << obj.centre->getX() << ", " << obj.centre->getY() << ") w:" << (obj.extent_x->getX()*2) << " h:" << (obj.extent_y->getY()*2);
+                      ^~~~~~
+SFBoundingBox.cc:74:52: error: request for member ‘centre’ in ‘obj’, which is of non-class type ‘const int’
+   os << "c:(" << obj.centre->getX() << ", " << obj.centre->getY() << ") w:" << (obj.extent_x->getX()*2) << " h:" << (obj.extent_y->getY()*2);
+                                                    ^~~~~~
+SFBoundingBox.cc:74:85: error: request for member ‘extent_x’ in ‘obj’, which is of non-class type ‘const int’
+  obj.centre->getX() << ", " << obj.centre->getY() << ") w:" << (obj.extent_x->getX()*2) << " h:" << (obj.extent_y->getY()*2);
+                                                                     ^~~~~~~~
+SFBoundingBox.cc:74:122: error: request for member ‘extent_y’ in ‘obj’, which is of non-class type ‘const int’
+ ntre->getY() << ") w:" << (obj.extent_x->getX()*2) << " h:" << (obj.extent_y->getY()*2);
+                                                                     ^~~~~~~~
+In file included from SFBoundingBox.h:10:0,
+                 from SFBoundingBox.cc:1:
+SFMath.h: At global scope:
+SFMath.h:9:10: warning: inline function ‘Vector3::Vector3(float, float)’ used but never defined
+   inline Vector3 (const float, const float);
+          ^~~~~~~
+Makefile:647: recipe for target 'SFBoundingBox.o' failed
+make[2]: *** [SFBoundingBox.o] Error 1
+make[2]: Leaving directory '/home/zyong/alan/src'
+Makefile:415: recipe for target 'all-recursive' failed
+make[1]: *** [all-recursive] Error 1
+make[1]: Leaving directory '/home/zyong/alan'
+Makefile:347: recipe for target 'all' failed
+make: *** [all] Error 2
+[zyong@localhost alan]$ make
+make  all-recursive
+make[1]: Entering directory '/home/zyong/alan'
+Making all in shaders
+make[2]: Entering directory '/home/zyong/alan/shaders'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/zyong/alan/shaders'
+Making all in src
+make[2]: Entering directory '/home/zyong/alan/src'
+depbase=`echo SFBoundingBox.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+g++ -DHAVE_CONFIG_H -I. -I..  -DGL_GLEXT_PROTOTYPES -DGL3_PROTOTYPES -std=c++11 -I/usr/include/libdrm -I/usr/include/libdrm -D_REENTRANT -I/usr/include/SDL2    -g -O2 -MT SFBoundingBox.o -MD -MP -MF $depbase.Tpo -c -o SFBoundingBox.o SFBoundingBox.cc &&\
+mv -f $depbase.Tpo $depbase.Po
+In file included from SFBoundingBox.h:10:0,
+                 from SFBoundingBox.cc:1:
+SFMath.h:22:8: error: prototype for ‘Vector3::Vector3(float, float, float)’ does not match any in class ‘Vector3’
+ inline Vector3::Vector3 (const float x, const float y, const float z) : m_x(x), m_y(y), m_z(z) {}
+        ^~~~~~~
+SFMath.h:10:10: error: candidates are: Vector3::Vector3(const Vector3&)
+   inline Vector3 (const Vector3 &);
+          ^~~~~~~
+SFMath.h:9:10: error:                 Vector3::Vector3(float, float)
+   inline Vector3 (const float, const float);
+          ^~~~~~~
+SFMath.h: In member function ‘const Vector3 Vector3::operator+(const Vector3&) const’:
+SFMath.h:45:4: error: no matching function for call to ‘Vector3::Vector3(float, float, float)’
+    );
+    ^
+SFMath.h:24:8: note: candidate: Vector3::Vector3(const Vector3&)
+ inline Vector3::Vector3 (const Vector3 &v) : m_x(v.m_x), m_y(v.m_y), m_z(v.m_z) {}
+        ^~~~~~~
+SFMath.h:24:8: note:   candidate expects 1 argument, 3 provided
+SFMath.h:9:10: note: candidate: Vector3::Vector3(float, float)
+   inline Vector3 (const float, const float);
+          ^~~~~~~
+SFMath.h:9:10: note:   candidate expects 2 arguments, 3 provided
+SFMath.h: In member function ‘const Vector3 Vector3::operator*(float) const’:
+SFMath.h:49:18: error: expected primary-expression before ‘(’ token
+   return Vector3 (
+                  ^
+SFMath.h:52:11: error: expected ‘)’ before ‘m_z’
+           m_z * scalar
+           ^~~
+SFMath.h: At global scope:
+SFMath.h:71:8: error: prototype for ‘Point3::Point3(float, float, float)’ does not match any in class ‘Point3’
+ inline Point3::Point3 (const float x, const float y, const float z) : m_x(x), m_y(y), m_z(z) {}
+        ^~~~~~
+SFMath.h:63:10: error: candidates are: Point3::Point3(const Point3&)
+   inline Point3 (const Point3 &);
+          ^~~~~~
+SFMath.h:62:10: error:                 Point3::Point3(const Vector3&)
+   inline Point3 (const Vector3 &);
+          ^~~~~~
+SFMath.h:61:10: error:                 Point3::Point3(float, float)
+   inline Point3 (const float, const float);
+          ^~~~~~
+SFMath.h: In function ‘const Vector3 xAxis()’:
+SFMath.h:102:34: error: no matching function for call to ‘Vector3::Vector3(float, float, float)’
+   return Vector3(1.0f, 0.0f, 0.0f);
+                                  ^
+SFMath.h:24:8: note: candidate: Vector3::Vector3(const Vector3&)
+ inline Vector3::Vector3 (const Vector3 &v) : m_x(v.m_x), m_y(v.m_y), m_z(v.m_z) {}
+        ^~~~~~~
+SFMath.h:24:8: note:   candidate expects 1 argument, 3 provided
+SFMath.h:9:10: note: candidate: Vector3::Vector3(float, float)
+   inline Vector3 (const float, const float);
+          ^~~~~~~
+SFMath.h:9:10: note:   candidate expects 2 arguments, 3 provided
+SFMath.h: In function ‘const Vector3 yAxis()’:
+SFMath.h:106:33: error: no matching function for call to ‘Vector3::Vector3(float, float, double)’
+   return Vector3(0.0f, 1.0f, 0.0);
+                                 ^
+SFMath.h:24:8: note: candidate: Vector3::Vector3(const Vector3&)
+ inline Vector3::Vector3 (const Vector3 &v) : m_x(v.m_x), m_y(v.m_y), m_z(v.m_z) {}
+        ^~~~~~~
+SFMath.h:24:8: note:   candidate expects 1 argument, 3 provided
+SFMath.h:9:10: note: candidate: Vector3::Vector3(float, float)
+   inline Vector3 (const float, const float);
+          ^~~~~~~
+SFMath.h:9:10: note:   candidate expects 2 arguments, 3 provided
+SFMath.h: In function ‘const Vector3 zAxis()’:
+SFMath.h:110:33: error: no matching function for call to ‘Vector3::Vector3(float, double, float)’
+   return Vector3(0.0f, 0.0, 1.0f);
+                                 ^
+SFMath.h:24:8: note: candidate: Vector3::Vector3(const Vector3&)
+ inline Vector3::Vector3 (const Vector3 &v) : m_x(v.m_x), m_y(v.m_y), m_z(v.m_z) {}
+        ^~~~~~~
+SFMath.h:24:8: note:   candidate expects 1 argument, 3 provided
+SFMath.h:9:10: note: candidate: Vector3::Vector3(float, float)
+   inline Vector3 (const float, const float);
+          ^~~~~~~
+SFMath.h:9:10: note:   candidate expects 2 arguments, 3 provided
+In file included from SFBoundingBox.cc:1:0:
+SFBoundingBox.h: At global scope:
+SFBoundingBox.h:12:21: error: expected unqualified-id before ‘,’ token
+ enum AXIS {X, Y, Z} ,
+                     ^
+SFBoundingBox.h:14:1: error: expected unqualified-id before ‘class’
+ class SFBoundingBox {
+ ^~~~~
+SFBoundingBox.cc:3:1: error: ‘SFBoundingBox’ does not name a type
+ SFBoundingBox::SFBoundingBox(const Vector3 centre,
+ ^~~~~~~~~~~~~
+SFBoundingBox.cc:13:1: error: ‘SFBoundingBox’ does not name a type
+ SFBoundingBox::~SFBoundingBox() {
+ ^~~~~~~~~~~~~
+SFBoundingBox.cc:20:6: error: ‘SFBoundingBox’ has not been declared
+ void SFBoundingBox::SetCentre(Vector3 & v) {
+      ^~~~~~~~~~~~~
+SFBoundingBox.cc: In function ‘void SetCentre(Vector3&)’:
+SFBoundingBox.cc:21:3: error: ‘centre’ was not declared in this scope
+   centre = make_shared<Vector3>(v);
+   ^~~~~~
+SFBoundingBox.cc: At global scope:
+SFBoundingBox.cc:31:19: error: ‘SFBoundingBox’ has not been declared
+ pair<float,float> SFBoundingBox::projectOntoAxis(const SFBoundingBox & b, enum AXIS axis) {
+                   ^~~~~~~~~~~~~
+SFBoundingBox.cc:31:56: error: ‘SFBoundingBox’ does not name a type
+ pair<float,float> SFBoundingBox::projectOntoAxis(const SFBoundingBox & b, enum AXIS axis) {
+                                                        ^~~~~~~~~~~~~
+SFBoundingBox.cc: In function ‘std::pair<float, float> projectOntoAxis(const int&, AXIS)’:
+SFBoundingBox.cc:37:23: error: request for member ‘extent_x’ in ‘b’, which is of non-class type ‘const int’
+       Vector3 bx = *b.extent_x;
+                       ^~~~~~~~
+SFBoundingBox.cc:38:44: error: request for member ‘centre’ in ‘b’, which is of non-class type ‘const int’
+       lo  = projection( Point2(Vector3(*(b.centre)) + (bx * -1)), xAxis());
+                                            ^~~~~~
+SFBoundingBox.cc:38:64: error: ‘Point2’ was not declared in this scope
+       lo  = projection( Point2(Vector3(*(b.centre)) + (bx * -1)), xAxis());
+                                                                ^
+SFBoundingBox.cc:39:44: error: request for member ‘centre’ in ‘b’, which is of non-class type ‘const int’
+       hi  = projection( Point2(Vector3(*(b.centre)) + bx), xAxis());
+                                            ^~~~~~
+SFBoundingBox.cc:44:23: error: request for member ‘extent_y’ in ‘b’, which is of non-class type ‘const int’
+       Vector3 by = *b.extent_y;
+                       ^~~~~~~~
+SFBoundingBox.cc:45:44: error: request for member ‘centre’ in ‘b’, which is of non-class type ‘const int’
+       lo  = projection( Point2(Vector3(*(b.centre)) + (by * -1)), yAxis());
+                                            ^~~~~~
+SFBoundingBox.cc:45:64: error: ‘Point2’ was not declared in this scope
+       lo  = projection( Point2(Vector3(*(b.centre)) + (by * -1)), yAxis());
+                                                                ^
+SFBoundingBox.cc:46:44: error: request for member ‘centre’ in ‘b’, which is of non-class type ‘const int’
+       hi  = projection( Point2(Vector3(*(b.centre)) + by), yAxis());
+                                            ^~~~~~
+SFBoundingBox.cc:51:23: error: request for member ‘extent_z’ in ‘b’, which is of non-class type ‘const int’
+       Vector3 bz = *b.extent_z;
+                       ^~~~~~~~
+SFBoundingBox.cc:52:44: error: request for member ‘centre’ in ‘b’, which is of non-class type ‘const int’
+       lo  = projection( Point2(Vector3(*(b.centre)) + (bz * -1)), zAxis());
+                                            ^~~~~~
+SFBoundingBox.cc:52:64: error: ‘Point2’ was not declared in this scope
+       lo  = projection( Point2(Vector3(*(b.centre)) + (bz * -1)), zAxis());
+                                                                ^
+SFBoundingBox.cc:53:44: error: request for member ‘centre’ in ‘b’, which is of non-class type ‘const int’
+       hi  = projection( Point2(Vector3(*(b.centre)) + bz), zAxis());
+                                            ^~~~~~
+SFBoundingBox.cc: At global scope:
+SFBoundingBox.cc:61:6: error: ‘SFBoundingBox’ has not been declared
+ bool SFBoundingBox::CollidesWith(const shared_ptr<SFBoundingBox> b) {
+      ^~~~~~~~~~~~~
+SFBoundingBox.cc:61:51: error: ‘SFBoundingBox’ was not declared in this scope
+ bool SFBoundingBox::CollidesWith(const shared_ptr<SFBoundingBox> b) {
+                                                   ^~~~~~~~~~~~~
+SFBoundingBox.cc:61:64: error: template argument 1 is invalid
+ bool SFBoundingBox::CollidesWith(const shared_ptr<SFBoundingBox> b) {
+                                                                ^
+SFBoundingBox.cc: In function ‘bool CollidesWith(int)’:
+SFBoundingBox.cc:62:50: error: invalid use of ‘this’ in non-member function
+   pair<float, float> a_x_proj = projectOntoAxis(*this, X),
+                                                  ^~~~
+SFBoundingBox.cc:67:5: error: ‘b_z_proj’ was not declared in this scope
+     b_z_proj = projectOntoAxis(*b, Z);
+     ^~~~~~~~
+SFBoundingBox.cc:67:33: error: invalid type argument of unary ‘*’ (have ‘int’)
+     b_z_proj = projectOntoAxis(*b, Z);
+                                 ^
+SFBoundingBox.cc:69:31: error: ‘b_x_proj’ was not declared in this scope
+   return (straddles(a_x_proj, b_x_proj)) && (straddles(a_y_proj, b_y_proj) && (straddles(a_z_proj, b_z_proj));
+                               ^~~~~~~~
+SFBoundingBox.cc:69:56: error: ‘a_y_proj’ was not declared in this scope
+   return (straddles(a_x_proj, b_x_proj)) && (straddles(a_y_proj, b_y_proj) && (straddles(a_z_proj, b_z_proj));
+                                                        ^~~~~~~~
+SFBoundingBox.cc:69:66: error: ‘b_y_proj’ was not declared in this scope
+   return (straddles(a_x_proj, b_x_proj)) && (straddles(a_y_proj, b_y_proj) && (straddles(a_z_proj, b_z_proj));
+                                                                  ^~~~~~~~
+SFBoundingBox.cc:69:90: error: ‘a_z_proj’ was not declared in this scope
+ _x_proj, b_x_proj)) && (straddles(a_y_proj, b_y_proj) && (straddles(a_z_proj, b_z_proj));
+                                                                     ^~~~~~~~
+SFBoundingBox.cc:69:110: error: expected ‘)’ before ‘;’ token
+ _x_proj)) && (straddles(a_y_proj, b_y_proj) && (straddles(a_z_proj, b_z_proj));
+                                                                               ^
+SFBoundingBox.cc: At global scope:
+SFBoundingBox.cc:73:40: error: ‘SFBoundingBox’ does not name a type
+ ostream& operator<<(ostream& os, const SFBoundingBox& obj) {
+                                        ^~~~~~~~~~~~~
+SFBoundingBox.cc: In function ‘std::ostream& operator<<(std::ostream&, const int&)’:
+SFBoundingBox.cc:74:22: error: request for member ‘centre’ in ‘obj’, which is of non-class type ‘const int’
+   os << "c:(" << obj.centre->getX() << ", " << obj.centre->getY() << ") w:" << (obj.extent_x->getX()*2) << " h:" << (obj.extent_y->getY()*2);
+                      ^~~~~~
+SFBoundingBox.cc:74:52: error: request for member ‘centre’ in ‘obj’, which is of non-class type ‘const int’
+   os << "c:(" << obj.centre->getX() << ", " << obj.centre->getY() << ") w:" << (obj.extent_x->getX()*2) << " h:" << (obj.extent_y->getY()*2);
+                                                    ^~~~~~
+SFBoundingBox.cc:74:85: error: request for member ‘extent_x’ in ‘obj’, which is of non-class type ‘const int’
+  obj.centre->getX() << ", " << obj.centre->getY() << ") w:" << (obj.extent_x->getX()*2) << " h:" << (obj.extent_y->getY()*2);
+                                                                     ^~~~~~~~
+SFBoundingBox.cc:74:122: error: request for member ‘extent_y’ in ‘obj’, which is of non-class type ‘const int’
+ ntre->getY() << ") w:" << (obj.extent_x->getX()*2) << " h:" << (obj.extent_y->getY()*2);
+                                                                     ^~~~~~~~
+In file included from SFBoundingBox.h:10:0,
+                 from SFBoundingBox.cc:1:
+SFMath.h: At global scope:
+SFMath.h:9:10: warning: inline function ‘Vector3::Vector3(float, float)’ used but never defined
+   inline Vector3 (const float, const float);
+          ^~~~~~~
+Makefile:647: recipe for target 'SFBoundingBox.o' failed
+make[2]: *** [SFBoundingBox.o] Error 1
+make[2]: Leaving directory '/home/zyong/alan/src'
+Makefile:415: recipe for target 'all-recursive' failed
+make[1]: *** [all-recursive] Error 1
+make[1]: Leaving directory '/home/zyong/alan'
+Makefile:347: recipe for target 'all' failed
+make: *** [all] Error 2
+[zyong@localhost alan]$ make
+make  all-recursive
+make[1]: Entering directory '/home/zyong/alan'
+Making all in shaders
+make[2]: Entering directory '/home/zyong/alan/shaders'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/zyong/alan/shaders'
+Making all in src
+make[2]: Entering directory '/home/zyong/alan/src'
+depbase=`echo SFBoundingBox.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+g++ -DHAVE_CONFIG_H -I. -I..  -DGL_GLEXT_PROTOTYPES -DGL3_PROTOTYPES -std=c++11 -I/usr/include/libdrm -I/usr/include/libdrm -D_REENTRANT -I/usr/include/SDL2    -g -O2 -MT SFBoundingBox.o -MD -MP -MF $depbase.Tpo -c -o SFBoundingBox.o SFBoundingBox.cc &&\
+mv -f $depbase.Tpo $depbase.Po
+In file included from SFBoundingBox.h:10:0,
+                 from SFBoundingBox.cc:1:
+SFMath.h:22:8: error: prototype for ‘Vector3::Vector3(float, float, float)’ does not match any in class ‘Vector3’
+ inline Vector3::Vector3 (const float x, const float y, const float z) : m_x(x), m_y(y), m_z(z) {}
+        ^~~~~~~
+SFMath.h:10:10: error: candidates are: Vector3::Vector3(const Vector3&)
+   inline Vector3 (const Vector3 &);
+          ^~~~~~~
+SFMath.h:9:10: error:                 Vector3::Vector3(float, float)
+   inline Vector3 (const float, const float);
+          ^~~~~~~
+SFMath.h: In member function ‘const Vector3 Vector3::operator+(const Vector3&) const’:
+SFMath.h:45:4: error: no matching function for call to ‘Vector3::Vector3(float, float, float)’
+    );
+    ^
+SFMath.h:24:8: note: candidate: Vector3::Vector3(const Vector3&)
+ inline Vector3::Vector3 (const Vector3 &v) : m_x(v.m_x), m_y(v.m_y), m_z(v.m_z) {}
+        ^~~~~~~
+SFMath.h:24:8: note:   candidate expects 1 argument, 3 provided
+SFMath.h:9:10: note: candidate: Vector3::Vector3(float, float)
+   inline Vector3 (const float, const float);
+          ^~~~~~~
+SFMath.h:9:10: note:   candidate expects 2 arguments, 3 provided
+SFMath.h: In member function ‘const Vector3 Vector3::operator*(float) const’:
+SFMath.h:49:18: error: expected primary-expression before ‘(’ token
+   return Vector3 (
+                  ^
+SFMath.h:52:11: error: expected ‘)’ before ‘m_z’
+           m_z * scalar
+           ^~~
+SFMath.h: At global scope:
+SFMath.h:71:8: error: prototype for ‘Point3::Point3(float, float, float)’ does not match any in class ‘Point3’
+ inline Point3::Point3 (const float x, const float y, const float z) : m_x(x), m_y(y), m_z(z) {}
+        ^~~~~~
+SFMath.h:63:10: error: candidates are: Point3::Point3(const Point3&)
+   inline Point3 (const Point3 &);
+          ^~~~~~
+SFMath.h:62:10: error:                 Point3::Point3(const Vector3&)
+   inline Point3 (const Vector3 &);
+          ^~~~~~
+SFMath.h:61:10: error:                 Point3::Point3(float, float)
+   inline Point3 (const float, const float);
+          ^~~~~~
+SFMath.h: In function ‘const Vector3 xAxis()’:
+SFMath.h:102:34: error: no matching function for call to ‘Vector3::Vector3(float, float, float)’
+   return Vector3(1.0f, 0.0f, 0.0f);
+                                  ^
+SFMath.h:24:8: note: candidate: Vector3::Vector3(const Vector3&)
+ inline Vector3::Vector3 (const Vector3 &v) : m_x(v.m_x), m_y(v.m_y), m_z(v.m_z) {}
+        ^~~~~~~
+SFMath.h:24:8: note:   candidate expects 1 argument, 3 provided
+SFMath.h:9:10: note: candidate: Vector3::Vector3(float, float)
+   inline Vector3 (const float, const float);
+          ^~~~~~~
+SFMath.h:9:10: note:   candidate expects 2 arguments, 3 provided
+SFMath.h: In function ‘const Vector3 yAxis()’:
+SFMath.h:106:33: error: no matching function for call to ‘Vector3::Vector3(float, float, double)’
+   return Vector3(0.0f, 1.0f, 0.0);
+                                 ^
+SFMath.h:24:8: note: candidate: Vector3::Vector3(const Vector3&)
+ inline Vector3::Vector3 (const Vector3 &v) : m_x(v.m_x), m_y(v.m_y), m_z(v.m_z) {}
+        ^~~~~~~
+SFMath.h:24:8: note:   candidate expects 1 argument, 3 provided
+SFMath.h:9:10: note: candidate: Vector3::Vector3(float, float)
+   inline Vector3 (const float, const float);
+          ^~~~~~~
+SFMath.h:9:10: note:   candidate expects 2 arguments, 3 provided
+SFMath.h: In function ‘const Vector3 zAxis()’:
+SFMath.h:110:33: error: no matching function for call to ‘Vector3::Vector3(float, double, float)’
+   return Vector3(0.0f, 0.0, 1.0f);
+                                 ^
+SFMath.h:24:8: note: candidate: Vector3::Vector3(const Vector3&)
+ inline Vector3::Vector3 (const Vector3 &v) : m_x(v.m_x), m_y(v.m_y), m_z(v.m_z) {}
+        ^~~~~~~
+SFMath.h:24:8: note:   candidate expects 1 argument, 3 provided
+SFMath.h:9:10: note: candidate: Vector3::Vector3(float, float)
+   inline Vector3 (const float, const float);
+          ^~~~~~~
+SFMath.h:9:10: note:   candidate expects 2 arguments, 3 provided
+In file included from SFBoundingBox.cc:1:0:
+SFBoundingBox.h: At global scope:
+SFBoundingBox.h:12:21: error: expected unqualified-id before ‘,’ token
+ enum AXIS {X, Y, Z} ,
+                     ^
+SFBoundingBox.h:14:1: error: expected unqualified-id before ‘class’
+ class SFBoundingBox {
+ ^~~~~
+SFBoundingBox.cc:3:1: error: ‘SFBoundingBox’ does not name a type
+ SFBoundingBox::SFBoundingBox(const Vector3 centre,
+ ^~~~~~~~~~~~~
+SFBoundingBox.cc:13:1: error: ‘SFBoundingBox’ does not name a type
+ SFBoundingBox::~SFBoundingBox() {
+ ^~~~~~~~~~~~~
+SFBoundingBox.cc:20:6: error: ‘SFBoundingBox’ has not been declared
+ void SFBoundingBox::SetCentre(Vector3 & v) {
+      ^~~~~~~~~~~~~
+SFBoundingBox.cc: In function ‘void SetCentre(Vector3&)’:
+SFBoundingBox.cc:21:3: error: ‘centre’ was not declared in this scope
+   centre = make_shared<Vector3>(v);
+   ^~~~~~
+SFBoundingBox.cc: At global scope:
+SFBoundingBox.cc:31:19: error: ‘SFBoundingBox’ has not been declared
+ pair<float,float> SFBoundingBox::projectOntoAxis(const SFBoundingBox & b, enum AXIS axis) {
+                   ^~~~~~~~~~~~~
+SFBoundingBox.cc:31:56: error: ‘SFBoundingBox’ does not name a type
+ pair<float,float> SFBoundingBox::projectOntoAxis(const SFBoundingBox & b, enum AXIS axis) {
+                                                        ^~~~~~~~~~~~~
+SFBoundingBox.cc: In function ‘std::pair<float, float> projectOntoAxis(const int&, AXIS)’:
+SFBoundingBox.cc:37:23: error: request for member ‘extent_x’ in ‘b’, which is of non-class type ‘const int’
+       Vector3 bx = *b.extent_x;
+                       ^~~~~~~~
+SFBoundingBox.cc:38:44: error: request for member ‘centre’ in ‘b’, which is of non-class type ‘const int’
+       lo  = projection( Point2(Vector3(*(b.centre)) + (bx * -1)), xAxis());
+                                            ^~~~~~
+SFBoundingBox.cc:38:64: error: ‘Point2’ was not declared in this scope
+       lo  = projection( Point2(Vector3(*(b.centre)) + (bx * -1)), xAxis());
+                                                                ^
+SFBoundingBox.cc:39:44: error: request for member ‘centre’ in ‘b’, which is of non-class type ‘const int’
+       hi  = projection( Point2(Vector3(*(b.centre)) + bx), xAxis());
+                                            ^~~~~~
+SFBoundingBox.cc:44:23: error: request for member ‘extent_y’ in ‘b’, which is of non-class type ‘const int’
+       Vector3 by = *b.extent_y;
+                       ^~~~~~~~
+SFBoundingBox.cc:45:44: error: request for member ‘centre’ in ‘b’, which is of non-class type ‘const int’
+       lo  = projection( Point2(Vector3(*(b.centre)) + (by * -1)), yAxis());
+                                            ^~~~~~
+SFBoundingBox.cc:45:64: error: ‘Point2’ was not declared in this scope
+       lo  = projection( Point2(Vector3(*(b.centre)) + (by * -1)), yAxis());
+                                                                ^
+SFBoundingBox.cc:46:44: error: request for member ‘centre’ in ‘b’, which is of non-class type ‘const int’
+       hi  = projection( Point2(Vector3(*(b.centre)) + by), yAxis());
+                                            ^~~~~~
+SFBoundingBox.cc:51:23: error: request for member ‘extent_z’ in ‘b’, which is of non-class type ‘const int’
+       Vector3 bz = *b.extent_z;
+                       ^~~~~~~~
+SFBoundingBox.cc:52:44: error: request for member ‘centre’ in ‘b’, which is of non-class type ‘const int’
+       lo  = projection( Point2(Vector3(*(b.centre)) + (bz * -1)), zAxis());
+                                            ^~~~~~
+SFBoundingBox.cc:52:64: error: ‘Point2’ was not declared in this scope
+       lo  = projection( Point2(Vector3(*(b.centre)) + (bz * -1)), zAxis());
+                                                                ^
+SFBoundingBox.cc:53:44: error: request for member ‘centre’ in ‘b’, which is of non-class type ‘const int’
+       hi  = projection( Point2(Vector3(*(b.centre)) + bz), zAxis());
+                                            ^~~~~~
+SFBoundingBox.cc: At global scope:
+SFBoundingBox.cc:61:6: error: ‘SFBoundingBox’ has not been declared
+ bool SFBoundingBox::CollidesWith(const shared_ptr<SFBoundingBox> b) {
+      ^~~~~~~~~~~~~
+SFBoundingBox.cc:61:51: error: ‘SFBoundingBox’ was not declared in this scope
+ bool SFBoundingBox::CollidesWith(const shared_ptr<SFBoundingBox> b) {
+                                                   ^~~~~~~~~~~~~
+SFBoundingBox.cc:61:64: error: template argument 1 is invalid
+ bool SFBoundingBox::CollidesWith(const shared_ptr<SFBoundingBox> b) {
+                                                                ^
+SFBoundingBox.cc: In function ‘bool CollidesWith(int)’:
+SFBoundingBox.cc:62:50: error: invalid use of ‘this’ in non-member function
+   pair<float, float> a_x_proj = projectOntoAxis(*this, X),
+                                                  ^~~~
+SFBoundingBox.cc:67:5: error: ‘b_z_proj’ was not declared in this scope
+     b_z_proj = projectOntoAxis(*b, Z);
+     ^~~~~~~~
+SFBoundingBox.cc:67:33: error: invalid type argument of unary ‘*’ (have ‘int’)
+     b_z_proj = projectOntoAxis(*b, Z);
+                                 ^
+SFBoundingBox.cc:69:31: error: ‘b_x_proj’ was not declared in this scope
+   return (straddles(a_x_proj, b_x_proj)) && (straddles(a_y_proj, b_y_proj) && (straddles(a_z_proj, b_z_proj));
+                               ^~~~~~~~
+SFBoundingBox.cc:69:56: error: ‘a_y_proj’ was not declared in this scope
+   return (straddles(a_x_proj, b_x_proj)) && (straddles(a_y_proj, b_y_proj) && (straddles(a_z_proj, b_z_proj));
+                                                        ^~~~~~~~
+SFBoundingBox.cc:69:66: error: ‘b_y_proj’ was not declared in this scope
+   return (straddles(a_x_proj, b_x_proj)) && (straddles(a_y_proj, b_y_proj) && (straddles(a_z_proj, b_z_proj));
+                                                                  ^~~~~~~~
+SFBoundingBox.cc:69:90: error: ‘a_z_proj’ was not declared in this scope
+   return (straddles(a_x_proj, b_x_proj)) && (straddles(a_y_proj, b_y_proj) && (straddles(a_z_proj, b_z_proj));
+                                                                                          ^~~~~~~~
+SFBoundingBox.cc:69:110: error: expected ‘)’ before ‘;’ token
+ rn (straddles(a_x_proj, b_x_proj)) && (straddles(a_y_proj, b_y_proj) && (straddles(a_z_proj, b_z_proj));
+                                                                                                        ^
+SFBoundingBox.cc: At global scope:
+SFBoundingBox.cc:73:40: error: ‘SFBoundingBox’ does not name a type
+ ostream& operator<<(ostream& os, const SFBoundingBox& obj) {
+                                        ^~~~~~~~~~~~~
+SFBoundingBox.cc: In function ‘std::ostream& operator<<(std::ostream&, const int&)’:
+SFBoundingBox.cc:74:22: error: request for member ‘centre’ in ‘obj’, which is of non-class type ‘const int’
+   os << "c:(" << obj.centre->getX() << ", " << obj.centre->getY() << ") w:" << (obj.extent_x->getX()*2) << " h:" << (obj.extent_y->getY()*2) << " h:" << (obj.extent_z->getZ()*2);
+                      ^~~~~~
+SFBoundingBox.cc:74:52: error: request for member ‘centre’ in ‘obj’, which is of non-class type ‘const int’
+   os << "c:(" << obj.centre->getX() << ", " << obj.centre->getY() << ") w:" << (obj.extent_x->getX()*2) << " h:" << (obj.extent_y->getY()*2) << " h:" << (obj.extent_z->getZ()*2);
+                                                    ^~~~~~
+SFBoundingBox.cc:74:85: error: request for member ‘extent_x’ in ‘obj’, which is of non-class type ‘const int’
+   os << "c:(" << obj.centre->getX() << ", " << obj.centre->getY() << ") w:" << (obj.extent_x->getX()*2) << " h:" << (obj.extent_y->getY()*2) << " h:" << (obj.extent_z->getZ()*2);
+                                                                                     ^~~~~~~~
+SFBoundingBox.cc:74:122: error: request for member ‘extent_y’ in ‘obj’, which is of non-class type ‘const int’
+ >getX() << ", " << obj.centre->getY() << ") w:" << (obj.extent_x->getX()*2) << " h:" << (obj.extent_y->getY()*2) << " h:" << (obj.extent_z->getZ()*2);
+                                                                                              ^~~~~~~~
+SFBoundingBox.cc:74:159: error: request for member ‘extent_z’ in ‘obj’, which is of non-class type ‘const int’
+  << ") w:" << (obj.extent_x->getX()*2) << " h:" << (obj.extent_y->getY()*2) << " h:" << (obj.extent_z->getZ()*2);
+                                                                                              ^~~~~~~~
+In file included from SFBoundingBox.h:10:0,
+                 from SFBoundingBox.cc:1:
+SFMath.h: At global scope:
+SFMath.h:9:10: warning: inline function ‘Vector3::Vector3(float, float)’ used but never defined
+   inline Vector3 (const float, const float);
+          ^~~~~~~
+Makefile:647: recipe for target 'SFBoundingBox.o' failed
+make[2]: *** [SFBoundingBox.o] Error 1
+make[2]: Leaving directory '/home/zyong/alan/src'
+Makefile:415: recipe for target 'all-recursive' failed
+make[1]: *** [all-recursive] Error 1
+make[1]: Leaving directory '/home/zyong/alan'
+Makefile:347: recipe for target 'all' failed
+make: *** [all] Error 2
+[zyong@localhost alan]$ make
+make  all-recursive
+make[1]: Entering directory '/home/zyong/alan'
+Making all in shaders
+make[2]: Entering directory '/home/zyong/alan/shaders'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/zyong/alan/shaders'
+Making all in src
+make[2]: Entering directory '/home/zyong/alan/src'
+depbase=`echo SFBoundingBox.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+g++ -DHAVE_CONFIG_H -I. -I..  -DGL_GLEXT_PROTOTYPES -DGL3_PROTOTYPES -std=c++11 -I/usr/include/libdrm -I/usr/include/libdrm -D_REENTRANT -I/usr/include/SDL2    -g -O2 -MT SFBoundingBox.o -MD -MP -MF $depbase.Tpo -c -o SFBoundingBox.o SFBoundingBox.cc &&\
+mv -f $depbase.Tpo $depbase.Po
+In file included from SFBoundingBox.h:10:0,
+                 from SFBoundingBox.cc:1:
+SFMath.h:22:8: error: prototype for ‘Vector3::Vector3(float, float, float)’ does not match any in class ‘Vector3’
+ inline Vector3::Vector3 (const float x, const float y, const float z) : m_x(x), m_y(y), m_z(z) {}
+        ^~~~~~~
+SFMath.h:10:10: error: candidates are: Vector3::Vector3(const Vector3&)
+   inline Vector3 (const Vector3 &);
+          ^~~~~~~
+SFMath.h:9:10: error:                 Vector3::Vector3(float, float)
+   inline Vector3 (const float, const float);
+          ^~~~~~~
+SFMath.h: In member function ‘const Vector3 Vector3::operator+(const Vector3&) const’:
+SFMath.h:45:4: error: no matching function for call to ‘Vector3::Vector3(float, float, float)’
+    );
+    ^
+SFMath.h:24:8: note: candidate: Vector3::Vector3(const Vector3&)
+ inline Vector3::Vector3 (const Vector3 &v) : m_x(v.m_x), m_y(v.m_y), m_z(v.m_z) {}
+        ^~~~~~~
+SFMath.h:24:8: note:   candidate expects 1 argument, 3 provided
+SFMath.h:9:10: note: candidate: Vector3::Vector3(float, float)
+   inline Vector3 (const float, const float);
+          ^~~~~~~
+SFMath.h:9:10: note:   candidate expects 2 arguments, 3 provided
+SFMath.h: In member function ‘const Vector3 Vector3::operator*(float) const’:
+SFMath.h:49:18: error: expected primary-expression before ‘(’ token
+   return Vector3 (
+                  ^
+SFMath.h:52:11: error: expected ‘)’ before ‘m_z’
+           m_z * scalar
+           ^~~
+SFMath.h: In function ‘const Vector3 xAxis()’:
+SFMath.h:102:34: error: no matching function for call to ‘Vector3::Vector3(float, float, float)’
+   return Vector3(1.0f, 0.0f, 0.0f);
+                                  ^
+SFMath.h:24:8: note: candidate: Vector3::Vector3(const Vector3&)
+ inline Vector3::Vector3 (const Vector3 &v) : m_x(v.m_x), m_y(v.m_y), m_z(v.m_z) {}
+        ^~~~~~~
+SFMath.h:24:8: note:   candidate expects 1 argument, 3 provided
+SFMath.h:9:10: note: candidate: Vector3::Vector3(float, float)
+   inline Vector3 (const float, const float);
+          ^~~~~~~
+SFMath.h:9:10: note:   candidate expects 2 arguments, 3 provided
+SFMath.h: In function ‘const Vector3 yAxis()’:
+SFMath.h:106:33: error: no matching function for call to ‘Vector3::Vector3(float, float, double)’
+   return Vector3(0.0f, 1.0f, 0.0);
+                                 ^
+SFMath.h:24:8: note: candidate: Vector3::Vector3(const Vector3&)
+ inline Vector3::Vector3 (const Vector3 &v) : m_x(v.m_x), m_y(v.m_y), m_z(v.m_z) {}
+        ^~~~~~~
+SFMath.h:24:8: note:   candidate expects 1 argument, 3 provided
+SFMath.h:9:10: note: candidate: Vector3::Vector3(float, float)
+   inline Vector3 (const float, const float);
+          ^~~~~~~
+SFMath.h:9:10: note:   candidate expects 2 arguments, 3 provided
+SFMath.h: In function ‘const Vector3 zAxis()’:
+SFMath.h:110:33: error: no matching function for call to ‘Vector3::Vector3(float, double, float)’
+   return Vector3(0.0f, 0.0, 1.0f);
+                                 ^
+SFMath.h:24:8: note: candidate: Vector3::Vector3(const Vector3&)
+ inline Vector3::Vector3 (const Vector3 &v) : m_x(v.m_x), m_y(v.m_y), m_z(v.m_z) {}
+        ^~~~~~~
+SFMath.h:24:8: note:   candidate expects 1 argument, 3 provided
+SFMath.h:9:10: note: candidate: Vector3::Vector3(float, float)
+   inline Vector3 (const float, const float);
+          ^~~~~~~
+SFMath.h:9:10: note:   candidate expects 2 arguments, 3 provided
+In file included from SFBoundingBox.cc:1:0:
+SFBoundingBox.h: At global scope:
+SFBoundingBox.h:12:21: error: expected unqualified-id before ‘,’ token
+ enum AXIS {X, Y, Z} ,
+                     ^
+SFBoundingBox.h:14:1: error: expected unqualified-id before ‘class’
+ class SFBoundingBox {
+ ^~~~~
+SFBoundingBox.cc:3:1: error: ‘SFBoundingBox’ does not name a type
+ SFBoundingBox::SFBoundingBox(const Vector3 centre,
+ ^~~~~~~~~~~~~
+SFBoundingBox.cc:13:1: error: ‘SFBoundingBox’ does not name a type
+ SFBoundingBox::~SFBoundingBox() {
+ ^~~~~~~~~~~~~
+SFBoundingBox.cc:20:6: error: ‘SFBoundingBox’ has not been declared
+ void SFBoundingBox::SetCentre(Vector3 & v) {
+      ^~~~~~~~~~~~~
+SFBoundingBox.cc: In function ‘void SetCentre(Vector3&)’:
+SFBoundingBox.cc:21:3: error: ‘centre’ was not declared in this scope
+   centre = make_shared<Vector3>(v);
+   ^~~~~~
+SFBoundingBox.cc: At global scope:
+SFBoundingBox.cc:31:19: error: ‘SFBoundingBox’ has not been declared
+ pair<float,float> SFBoundingBox::projectOntoAxis(const SFBoundingBox & b, enum AXIS axis) {
+                   ^~~~~~~~~~~~~
+SFBoundingBox.cc:31:56: error: ‘SFBoundingBox’ does not name a type
+ pair<float,float> SFBoundingBox::projectOntoAxis(const SFBoundingBox & b, enum AXIS axis) {
+                                                        ^~~~~~~~~~~~~
+SFBoundingBox.cc: In function ‘std::pair<float, float> projectOntoAxis(const int&, AXIS)’:
+SFBoundingBox.cc:37:23: error: request for member ‘extent_x’ in ‘b’, which is of non-class type ‘const int’
+       Vector3 bx = *b.extent_x;
+                       ^~~~~~~~
+SFBoundingBox.cc:38:44: error: request for member ‘centre’ in ‘b’, which is of non-class type ‘const int’
+       lo  = projection( Point2(Vector3(*(b.centre)) + (bx * -1)), xAxis());
+                                            ^~~~~~
+SFBoundingBox.cc:38:64: error: ‘Point2’ was not declared in this scope
+       lo  = projection( Point2(Vector3(*(b.centre)) + (bx * -1)), xAxis());
+                                                                ^
+SFBoundingBox.cc:39:44: error: request for member ‘centre’ in ‘b’, which is of non-class type ‘const int’
+       hi  = projection( Point2(Vector3(*(b.centre)) + bx), xAxis());
+                                            ^~~~~~
+SFBoundingBox.cc:44:23: error: request for member ‘extent_y’ in ‘b’, which is of non-class type ‘const int’
+       Vector3 by = *b.extent_y;
+                       ^~~~~~~~
+SFBoundingBox.cc:45:44: error: request for member ‘centre’ in ‘b’, which is of non-class type ‘const int’
+       lo  = projection( Point2(Vector3(*(b.centre)) + (by * -1)), yAxis());
+                                            ^~~~~~
+SFBoundingBox.cc:45:64: error: ‘Point2’ was not declared in this scope
+       lo  = projection( Point2(Vector3(*(b.centre)) + (by * -1)), yAxis());
+                                                                ^
+SFBoundingBox.cc:46:44: error: request for member ‘centre’ in ‘b’, which is of non-class type ‘const int’
+       hi  = projection( Point2(Vector3(*(b.centre)) + by), yAxis());
+                                            ^~~~~~
+SFBoundingBox.cc:51:23: error: request for member ‘extent_z’ in ‘b’, which is of non-class type ‘const int’
+       Vector3 bz = *b.extent_z;
+                       ^~~~~~~~
+SFBoundingBox.cc:52:44: error: request for member ‘centre’ in ‘b’, which is of non-class type ‘const int’
+       lo  = projection( Point2(Vector3(*(b.centre)) + (bz * -1)), zAxis());
+                                            ^~~~~~
+SFBoundingBox.cc:52:64: error: ‘Point2’ was not declared in this scope
+       lo  = projection( Point2(Vector3(*(b.centre)) + (bz * -1)), zAxis());
+                                                                ^
+SFBoundingBox.cc:53:44: error: request for member ‘centre’ in ‘b’, which is of non-class type ‘const int’
+       hi  = projection( Point2(Vector3(*(b.centre)) + bz), zAxis());
+                                            ^~~~~~
+SFBoundingBox.cc: At global scope:
+SFBoundingBox.cc:61:6: error: ‘SFBoundingBox’ has not been declared
+ bool SFBoundingBox::CollidesWith(const shared_ptr<SFBoundingBox> b) {
+      ^~~~~~~~~~~~~
+SFBoundingBox.cc:61:51: error: ‘SFBoundingBox’ was not declared in this scope
+ bool SFBoundingBox::CollidesWith(const shared_ptr<SFBoundingBox> b) {
+                                                   ^~~~~~~~~~~~~
+SFBoundingBox.cc:61:64: error: template argument 1 is invalid
+ bool SFBoundingBox::CollidesWith(const shared_ptr<SFBoundingBox> b) {
+                                                                ^
+SFBoundingBox.cc: In function ‘bool CollidesWith(int)’:
+SFBoundingBox.cc:62:50: error: invalid use of ‘this’ in non-member function
+   pair<float, float> a_x_proj = projectOntoAxis(*this, X),
+                                                  ^~~~
+SFBoundingBox.cc:67:5: error: ‘b_z_proj’ was not declared in this scope
+     b_z_proj = projectOntoAxis(*b, Z);
+     ^~~~~~~~
+SFBoundingBox.cc:67:33: error: invalid type argument of unary ‘*’ (have ‘int’)
+     b_z_proj = projectOntoAxis(*b, Z);
+                                 ^
+SFBoundingBox.cc:69:31: error: ‘b_x_proj’ was not declared in this scope
+   return (straddles(a_x_proj, b_x_proj)) && (straddles(a_y_proj, b_y_proj) && (straddles(a_z_proj, b_z_proj));
+                               ^~~~~~~~
+SFBoundingBox.cc:69:56: error: ‘a_y_proj’ was not declared in this scope
+   return (straddles(a_x_proj, b_x_proj)) && (straddles(a_y_proj, b_y_proj) && (straddles(a_z_proj, b_z_proj));
+                                                        ^~~~~~~~
+SFBoundingBox.cc:69:66: error: ‘b_y_proj’ was not declared in this scope
+   return (straddles(a_x_proj, b_x_proj)) && (straddles(a_y_proj, b_y_proj) && (straddles(a_z_proj, b_z_proj));
+                                                                  ^~~~~~~~
+SFBoundingBox.cc:69:90: error: ‘a_z_proj’ was not declared in this scope
+   return (straddles(a_x_proj, b_x_proj)) && (straddles(a_y_proj, b_y_proj) && (straddles(a_z_proj, b_z_proj));
+                                                                                          ^~~~~~~~
+SFBoundingBox.cc:69:110: error: expected ‘)’ before ‘;’ token
+ rn (straddles(a_x_proj, b_x_proj)) && (straddles(a_y_proj, b_y_proj) && (straddles(a_z_proj, b_z_proj));
+                                                                                                        ^
+SFBoundingBox.cc: At global scope:
+SFBoundingBox.cc:73:40: error: ‘SFBoundingBox’ does not name a type
+ ostream& operator<<(ostream& os, const SFBoundingBox& obj) {
+                                        ^~~~~~~~~~~~~
+SFBoundingBox.cc: In function ‘std::ostream& operator<<(std::ostream&, const int&)’:
+SFBoundingBox.cc:74:22: error: request for member ‘centre’ in ‘obj’, which is of non-class type ‘const int’
+   os << "c:(" << obj.centre->getX() << ", " << obj.centre->getY() << ") w:" << (obj.extent_x->getX()*2) << " h:" << (obj.extent_y->getY()*2) << " h:" << (obj.extent_z->getZ()*2);
+                      ^~~~~~
+SFBoundingBox.cc:74:52: error: request for member ‘centre’ in ‘obj’, which is of non-class type ‘const int’
+   os << "c:(" << obj.centre->getX() << ", " << obj.centre->getY() << ") w:" << (obj.extent_x->getX()*2) << " h:" << (obj.extent_y->getY()*2) << " h:" << (obj.extent_z->getZ()*2);
+                                                    ^~~~~~
+SFBoundingBox.cc:74:85: error: request for member ‘extent_x’ in ‘obj’, which is of non-class type ‘const int’
+   os << "c:(" << obj.centre->getX() << ", " << obj.centre->getY() << ") w:" << (obj.extent_x->getX()*2) << " h:" << (obj.extent_y->getY()*2) << " h:" << (obj.extent_z->getZ()*2);
+                                                                                     ^~~~~~~~
+SFBoundingBox.cc:74:122: error: request for member ‘extent_y’ in ‘obj’, which is of non-class type ‘const int’
+ >getX() << ", " << obj.centre->getY() << ") w:" << (obj.extent_x->getX()*2) << " h:" << (obj.extent_y->getY()*2) << " h:" << (obj.extent_z->getZ()*2);
+                                                                                              ^~~~~~~~
+SFBoundingBox.cc:74:159: error: request for member ‘extent_z’ in ‘obj’, which is of non-class type ‘const int’
+  << ") w:" << (obj.extent_x->getX()*2) << " h:" << (obj.extent_y->getY()*2) << " h:" << (obj.extent_z->getZ()*2);
+                                                                                              ^~~~~~~~
+In file included from SFBoundingBox.h:10:0,
+                 from SFBoundingBox.cc:1:
+SFMath.h: At global scope:
+SFMath.h:9:10: warning: inline function ‘Vector3::Vector3(float, float)’ used but never defined
+   inline Vector3 (const float, const float);
+          ^~~~~~~
+Makefile:647: recipe for target 'SFBoundingBox.o' failed
+make[2]: *** [SFBoundingBox.o] Error 1
+make[2]: Leaving directory '/home/zyong/alan/src'
+Makefile:415: recipe for target 'all-recursive' failed
+make[1]: *** [all-recursive] Error 1
+make[1]: Leaving directory '/home/zyong/alan'
+Makefile:347: recipe for target 'all' failed
+make: *** [all] Error 2
+[zyong@localhost alan]$ make
+make  all-recursive
+make[1]: Entering directory '/home/zyong/alan'
+Making all in shaders
+make[2]: Entering directory '/home/zyong/alan/shaders'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/zyong/alan/shaders'
+Making all in src
+make[2]: Entering directory '/home/zyong/alan/src'
+depbase=`echo SFBoundingBox.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+g++ -DHAVE_CONFIG_H -I. -I..  -DGL_GLEXT_PROTOTYPES -DGL3_PROTOTYPES -std=c++11 -I/usr/include/libdrm -I/usr/include/libdrm -D_REENTRANT -I/usr/include/SDL2    -g -O2 -MT SFBoundingBox.o -MD -MP -MF $depbase.Tpo -c -o SFBoundingBox.o SFBoundingBox.cc &&\
+mv -f $depbase.Tpo $depbase.Po
+In file included from SFBoundingBox.h:10:0,
+                 from SFBoundingBox.cc:1:
+SFMath.h: In member function ‘const Vector3 Vector3::operator*(float) const’:
+SFMath.h:53:4: error: no matching function for call to ‘Vector3::Vector3(float, float)’
+    );
+    ^
+SFMath.h:24:8: note: candidate: Vector3::Vector3(const Vector3&)
+ inline Vector3::Vector3 (const Vector3 &v) : m_x(v.m_x), m_y(v.m_y), m_z(v.m_z) {}
+        ^~~~~~~
+SFMath.h:24:8: note:   candidate expects 1 argument, 2 provided
+SFMath.h:22:8: note: candidate: Vector3::Vector3(float, float, float)
+ inline Vector3::Vector3 (const float x, const float y, const float z) : m_x(x), m_y(y), m_z(z) {}
+        ^~~~~~~
+SFMath.h:22:8: note:   candidate expects 3 arguments, 2 provided
+SFMath.h:49:18: error: expected primary-expression before ‘(’ token
+   return Vector3 (
+                  ^
+SFMath.h:52:11: error: expected ‘)’ before ‘m_z’
+           m_z * scalar
+           ^~~
+In file included from SFBoundingBox.cc:1:0:
+SFBoundingBox.h: At global scope:
+SFBoundingBox.h:12:21: error: expected unqualified-id before ‘,’ token
+ enum AXIS {X, Y, Z} ,
+                     ^
+SFBoundingBox.h:14:1: error: expected unqualified-id before ‘class’
+ class SFBoundingBox {
+ ^~~~~
+SFBoundingBox.cc:3:1: error: ‘SFBoundingBox’ does not name a type
+ SFBoundingBox::SFBoundingBox(const Vector3 centre,
+ ^~~~~~~~~~~~~
+SFBoundingBox.cc:13:1: error: ‘SFBoundingBox’ does not name a type
+ SFBoundingBox::~SFBoundingBox() {
+ ^~~~~~~~~~~~~
+SFBoundingBox.cc:20:6: error: ‘SFBoundingBox’ has not been declared
+ void SFBoundingBox::SetCentre(Vector3 & v) {
+      ^~~~~~~~~~~~~
+SFBoundingBox.cc: In function ‘void SetCentre(Vector3&)’:
+SFBoundingBox.cc:21:3: error: ‘centre’ was not declared in this scope
+   centre = make_shared<Vector3>(v);
+   ^~~~~~
+SFBoundingBox.cc: At global scope:
+SFBoundingBox.cc:31:19: error: ‘SFBoundingBox’ has not been declared
+ pair<float,float> SFBoundingBox::projectOntoAxis(const SFBoundingBox & b, enum AXIS axis) {
+                   ^~~~~~~~~~~~~
+SFBoundingBox.cc:31:56: error: ‘SFBoundingBox’ does not name a type
+ pair<float,float> SFBoundingBox::projectOntoAxis(const SFBoundingBox & b, enum AXIS axis) {
+                                                        ^~~~~~~~~~~~~
+SFBoundingBox.cc: In function ‘std::pair<float, float> projectOntoAxis(const int&, AXIS)’:
+SFBoundingBox.cc:37:23: error: request for member ‘extent_x’ in ‘b’, which is of non-class type ‘const int’
+       Vector3 bx = *b.extent_x;
+                       ^~~~~~~~
+SFBoundingBox.cc:38:44: error: request for member ‘centre’ in ‘b’, which is of non-class type ‘const int’
+       lo  = projection( Point2(Vector3(*(b.centre)) + (bx * -1)), xAxis());
+                                            ^~~~~~
+SFBoundingBox.cc:38:64: error: ‘Point2’ was not declared in this scope
+       lo  = projection( Point2(Vector3(*(b.centre)) + (bx * -1)), xAxis());
+                                                                ^
+SFBoundingBox.cc:39:44: error: request for member ‘centre’ in ‘b’, which is of non-class type ‘const int’
+       hi  = projection( Point2(Vector3(*(b.centre)) + bx), xAxis());
+                                            ^~~~~~
+SFBoundingBox.cc:44:23: error: request for member ‘extent_y’ in ‘b’, which is of non-class type ‘const int’
+       Vector3 by = *b.extent_y;
+                       ^~~~~~~~
+SFBoundingBox.cc:45:44: error: request for member ‘centre’ in ‘b’, which is of non-class type ‘const int’
+       lo  = projection( Point2(Vector3(*(b.centre)) + (by * -1)), yAxis());
+                                            ^~~~~~
+SFBoundingBox.cc:45:64: error: ‘Point2’ was not declared in this scope
+       lo  = projection( Point2(Vector3(*(b.centre)) + (by * -1)), yAxis());
+                                                                ^
+SFBoundingBox.cc:46:44: error: request for member ‘centre’ in ‘b’, which is of non-class type ‘const int’
+       hi  = projection( Point2(Vector3(*(b.centre)) + by), yAxis());
+                                            ^~~~~~
+SFBoundingBox.cc:51:23: error: request for member ‘extent_z’ in ‘b’, which is of non-class type ‘const int’
+       Vector3 bz = *b.extent_z;
+                       ^~~~~~~~
+SFBoundingBox.cc:52:44: error: request for member ‘centre’ in ‘b’, which is of non-class type ‘const int’
+       lo  = projection( Point2(Vector3(*(b.centre)) + (bz * -1)), zAxis());
+                                            ^~~~~~
+SFBoundingBox.cc:52:64: error: ‘Point2’ was not declared in this scope
+       lo  = projection( Point2(Vector3(*(b.centre)) + (bz * -1)), zAxis());
+                                                                ^
+SFBoundingBox.cc:53:44: error: request for member ‘centre’ in ‘b’, which is of non-class type ‘const int’
+       hi  = projection( Point2(Vector3(*(b.centre)) + bz), zAxis());
+                                            ^~~~~~
+SFBoundingBox.cc: At global scope:
+SFBoundingBox.cc:61:6: error: ‘SFBoundingBox’ has not been declared
+ bool SFBoundingBox::CollidesWith(const shared_ptr<SFBoundingBox> b) {
+      ^~~~~~~~~~~~~
+SFBoundingBox.cc:61:51: error: ‘SFBoundingBox’ was not declared in this scope
+ bool SFBoundingBox::CollidesWith(const shared_ptr<SFBoundingBox> b) {
+                                                   ^~~~~~~~~~~~~
+SFBoundingBox.cc:61:64: error: template argument 1 is invalid
+ bool SFBoundingBox::CollidesWith(const shared_ptr<SFBoundingBox> b) {
+                                                                ^
+SFBoundingBox.cc: In function ‘bool CollidesWith(int)’:
+SFBoundingBox.cc:62:50: error: invalid use of ‘this’ in non-member function
+   pair<float, float> a_x_proj = projectOntoAxis(*this, X),
+                                                  ^~~~
+SFBoundingBox.cc:67:5: error: ‘b_z_proj’ was not declared in this scope
+     b_z_proj = projectOntoAxis(*b, Z);
+     ^~~~~~~~
+SFBoundingBox.cc:67:33: error: invalid type argument of unary ‘*’ (have ‘int’)
+     b_z_proj = projectOntoAxis(*b, Z);
+                                 ^
+SFBoundingBox.cc:69:31: error: ‘b_x_proj’ was not declared in this scope
+   return (straddles(a_x_proj, b_x_proj)) && (straddles(a_y_proj, b_y_proj) && (straddles(a_z_proj, b_z_proj));
+                               ^~~~~~~~
+SFBoundingBox.cc:69:56: error: ‘a_y_proj’ was not declared in this scope
+   return (straddles(a_x_proj, b_x_proj)) && (straddles(a_y_proj, b_y_proj) && (straddles(a_z_proj, b_z_proj));
+                                                        ^~~~~~~~
+SFBoundingBox.cc:69:66: error: ‘b_y_proj’ was not declared in this scope
+   return (straddles(a_x_proj, b_x_proj)) && (straddles(a_y_proj, b_y_proj) && (straddles(a_z_proj, b_z_proj));
+                                                                  ^~~~~~~~
+SFBoundingBox.cc:69:90: error: ‘a_z_proj’ was not declared in this scope
+   return (straddles(a_x_proj, b_x_proj)) && (straddles(a_y_proj, b_y_proj) && (straddles(a_z_proj, b_z_proj));
+                                                                                          ^~~~~~~~
+SFBoundingBox.cc:69:110: error: expected ‘)’ before ‘;’ token
+ rn (straddles(a_x_proj, b_x_proj)) && (straddles(a_y_proj, b_y_proj) && (straddles(a_z_proj, b_z_proj));
+                                                                                                        ^
+SFBoundingBox.cc: At global scope:
+SFBoundingBox.cc:73:40: error: ‘SFBoundingBox’ does not name a type
+ ostream& operator<<(ostream& os, const SFBoundingBox& obj) {
+                                        ^~~~~~~~~~~~~
+SFBoundingBox.cc: In function ‘std::ostream& operator<<(std::ostream&, const int&)’:
+SFBoundingBox.cc:74:22: error: request for member ‘centre’ in ‘obj’, which is of non-class type ‘const int’
+   os << "c:(" << obj.centre->getX() << ", " << obj.centre->getY() << ") w:" << (obj.extent_x->getX()*2) << " h:" << (obj.extent_y->getY()*2) << " h:" << (obj.extent_z->getZ()*2);
+                      ^~~~~~
+SFBoundingBox.cc:74:52: error: request for member ‘centre’ in ‘obj’, which is of non-class type ‘const int’
+   os << "c:(" << obj.centre->getX() << ", " << obj.centre->getY() << ") w:" << (obj.extent_x->getX()*2) << " h:" << (obj.extent_y->getY()*2) << " h:" << (obj.extent_z->getZ()*2);
+                                                    ^~~~~~
+SFBoundingBox.cc:74:85: error: request for member ‘extent_x’ in ‘obj’, which is of non-class type ‘const int’
+   os << "c:(" << obj.centre->getX() << ", " << obj.centre->getY() << ") w:" << (obj.extent_x->getX()*2) << " h:" << (obj.extent_y->getY()*2) << " h:" << (obj.extent_z->getZ()*2);
+                                                                                     ^~~~~~~~
+SFBoundingBox.cc:74:122: error: request for member ‘extent_y’ in ‘obj’, which is of non-class type ‘const int’
+ >getX() << ", " << obj.centre->getY() << ") w:" << (obj.extent_x->getX()*2) << " h:" << (obj.extent_y->getY()*2) << " h:" << (obj.extent_z->getZ()*2);
+                                                                                              ^~~~~~~~
+SFBoundingBox.cc:74:159: error: request for member ‘extent_z’ in ‘obj’, which is of non-class type ‘const int’
+  << ") w:" << (obj.extent_x->getX()*2) << " h:" << (obj.extent_y->getY()*2) << " h:" << (obj.extent_z->getZ()*2);
+                                                                                              ^~~~~~~~
+Makefile:647: recipe for target 'SFBoundingBox.o' failed
+make[2]: *** [SFBoundingBox.o] Error 1
+make[2]: Leaving directory '/home/zyong/alan/src'
+Makefile:415: recipe for target 'all-recursive' failed
+make[1]: *** [all-recursive] Error 1
+make[1]: Leaving directory '/home/zyong/alan'
+Makefile:347: recipe for target 'all' failed
+make: *** [all] Error 2
+[zyong@localhost alan]$ make
+make  all-recursive
+make[1]: Entering directory '/home/zyong/alan'
+Making all in shaders
+make[2]: Entering directory '/home/zyong/alan/shaders'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/zyong/alan/shaders'
+Making all in src
+make[2]: Entering directory '/home/zyong/alan/src'
+depbase=`echo SFBoundingBox.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+g++ -DHAVE_CONFIG_H -I. -I..  -DGL_GLEXT_PROTOTYPES -DGL3_PROTOTYPES -std=c++11 -I/usr/include/libdrm -I/usr/include/libdrm -D_REENTRANT -I/usr/include/SDL2    -g -O2 -MT SFBoundingBox.o -MD -MP -MF $depbase.Tpo -c -o SFBoundingBox.o SFBoundingBox.cc &&\
+mv -f $depbase.Tpo $depbase.Po
+In file included from SFBoundingBox.cc:1:0:
+SFBoundingBox.h:12:21: error: expected unqualified-id before ‘,’ token
+ enum AXIS {X, Y, Z} ,
+                     ^
+SFBoundingBox.h:14:1: error: expected unqualified-id before ‘class’
+ class SFBoundingBox {
+ ^~~~~
+SFBoundingBox.cc:3:1: error: ‘SFBoundingBox’ does not name a type
+ SFBoundingBox::SFBoundingBox(const Vector3 centre,
+ ^~~~~~~~~~~~~
+SFBoundingBox.cc:13:1: error: ‘SFBoundingBox’ does not name a type
+ SFBoundingBox::~SFBoundingBox() {
+ ^~~~~~~~~~~~~
+SFBoundingBox.cc:20:6: error: ‘SFBoundingBox’ has not been declared
+ void SFBoundingBox::SetCentre(Vector3 & v) {
+      ^~~~~~~~~~~~~
+SFBoundingBox.cc: In function ‘void SetCentre(Vector3&)’:
+SFBoundingBox.cc:21:3: error: ‘centre’ was not declared in this scope
+   centre = make_shared<Vector3>(v);
+   ^~~~~~
+SFBoundingBox.cc: At global scope:
+SFBoundingBox.cc:31:19: error: ‘SFBoundingBox’ has not been declared
+ pair<float,float> SFBoundingBox::projectOntoAxis(const SFBoundingBox & b, enum AXIS axis) {
+                   ^~~~~~~~~~~~~
+SFBoundingBox.cc:31:56: error: ‘SFBoundingBox’ does not name a type
+ pair<float,float> SFBoundingBox::projectOntoAxis(const SFBoundingBox & b, enum AXIS axis) {
+                                                        ^~~~~~~~~~~~~
+SFBoundingBox.cc: In function ‘std::pair<float, float> projectOntoAxis(const int&, AXIS)’:
+SFBoundingBox.cc:37:23: error: request for member ‘extent_x’ in ‘b’, which is of non-class type ‘const int’
+       Vector3 bx = *b.extent_x;
+                       ^~~~~~~~
+SFBoundingBox.cc:38:44: error: request for member ‘centre’ in ‘b’, which is of non-class type ‘const int’
+       lo  = projection( Point2(Vector3(*(b.centre)) + (bx * -1)), xAxis());
+                                            ^~~~~~
+SFBoundingBox.cc:38:64: error: ‘Point2’ was not declared in this scope
+       lo  = projection( Point2(Vector3(*(b.centre)) + (bx * -1)), xAxis());
+                                                                ^
+SFBoundingBox.cc:39:44: error: request for member ‘centre’ in ‘b’, which is of non-class type ‘const int’
+       hi  = projection( Point2(Vector3(*(b.centre)) + bx), xAxis());
+                                            ^~~~~~
+SFBoundingBox.cc:44:23: error: request for member ‘extent_y’ in ‘b’, which is of non-class type ‘const int’
+       Vector3 by = *b.extent_y;
+                       ^~~~~~~~
+SFBoundingBox.cc:45:44: error: request for member ‘centre’ in ‘b’, which is of non-class type ‘const int’
+       lo  = projection( Point2(Vector3(*(b.centre)) + (by * -1)), yAxis());
+                                            ^~~~~~
+SFBoundingBox.cc:45:64: error: ‘Point2’ was not declared in this scope
+       lo  = projection( Point2(Vector3(*(b.centre)) + (by * -1)), yAxis());
+                                                                ^
+SFBoundingBox.cc:46:44: error: request for member ‘centre’ in ‘b’, which is of non-class type ‘const int’
+       hi  = projection( Point2(Vector3(*(b.centre)) + by), yAxis());
+                                            ^~~~~~
+SFBoundingBox.cc:51:23: error: request for member ‘extent_z’ in ‘b’, which is of non-class type ‘const int’
+       Vector3 bz = *b.extent_z;
+                       ^~~~~~~~
+SFBoundingBox.cc:52:44: error: request for member ‘centre’ in ‘b’, which is of non-class type ‘const int’
+       lo  = projection( Point2(Vector3(*(b.centre)) + (bz * -1)), zAxis());
+                                            ^~~~~~
+SFBoundingBox.cc:52:64: error: ‘Point2’ was not declared in this scope
+       lo  = projection( Point2(Vector3(*(b.centre)) + (bz * -1)), zAxis());
+                                                                ^
+SFBoundingBox.cc:53:44: error: request for member ‘centre’ in ‘b’, which is of non-class type ‘const int’
+       hi  = projection( Point2(Vector3(*(b.centre)) + bz), zAxis());
+                                            ^~~~~~
+SFBoundingBox.cc: At global scope:
+SFBoundingBox.cc:61:6: error: ‘SFBoundingBox’ has not been declared
+ bool SFBoundingBox::CollidesWith(const shared_ptr<SFBoundingBox> b) {
+      ^~~~~~~~~~~~~
+SFBoundingBox.cc:61:51: error: ‘SFBoundingBox’ was not declared in this scope
+ bool SFBoundingBox::CollidesWith(const shared_ptr<SFBoundingBox> b) {
+                                                   ^~~~~~~~~~~~~
+SFBoundingBox.cc:61:64: error: template argument 1 is invalid
+ bool SFBoundingBox::CollidesWith(const shared_ptr<SFBoundingBox> b) {
+                                                                ^
+SFBoundingBox.cc: In function ‘bool CollidesWith(int)’:
+SFBoundingBox.cc:62:50: error: invalid use of ‘this’ in non-member function
+   pair<float, float> a_x_proj = projectOntoAxis(*this, X),
+                                                  ^~~~
+SFBoundingBox.cc:67:5: error: ‘b_z_proj’ was not declared in this scope
+     b_z_proj = projectOntoAxis(*b, Z);
+     ^~~~~~~~
+SFBoundingBox.cc:67:33: error: invalid type argument of unary ‘*’ (have ‘int’)
+     b_z_proj = projectOntoAxis(*b, Z);
+                                 ^
+SFBoundingBox.cc:69:31: error: ‘b_x_proj’ was not declared in this scope
+   return (straddles(a_x_proj, b_x_proj)) && (straddles(a_y_proj, b_y_proj) && (straddles(a_z_proj, b_z_proj));
+                               ^~~~~~~~
+SFBoundingBox.cc:69:56: error: ‘a_y_proj’ was not declared in this scope
+   return (straddles(a_x_proj, b_x_proj)) && (straddles(a_y_proj, b_y_proj) && (straddles(a_z_proj, b_z_proj));
+                                                        ^~~~~~~~
+SFBoundingBox.cc:69:66: error: ‘b_y_proj’ was not declared in this scope
+   return (straddles(a_x_proj, b_x_proj)) && (straddles(a_y_proj, b_y_proj) && (straddles(a_z_proj, b_z_proj));
+                                                                  ^~~~~~~~
+SFBoundingBox.cc:69:90: error: ‘a_z_proj’ was not declared in this scope
+   return (straddles(a_x_proj, b_x_proj)) && (straddles(a_y_proj, b_y_proj) && (straddles(a_z_proj, b_z_proj));
+                                                                                          ^~~~~~~~
+SFBoundingBox.cc:69:110: error: expected ‘)’ before ‘;’ token
+ rn (straddles(a_x_proj, b_x_proj)) && (straddles(a_y_proj, b_y_proj) && (straddles(a_z_proj, b_z_proj));
+                                                                                                        ^
+SFBoundingBox.cc: At global scope:
+SFBoundingBox.cc:73:40: error: ‘SFBoundingBox’ does not name a type
+ ostream& operator<<(ostream& os, const SFBoundingBox& obj) {
+                                        ^~~~~~~~~~~~~
+SFBoundingBox.cc: In function ‘std::ostream& operator<<(std::ostream&, const int&)’:
+SFBoundingBox.cc:74:22: error: request for member ‘centre’ in ‘obj’, which is of non-class type ‘const int’
+   os << "c:(" << obj.centre->getX() << ", " << obj.centre->getY() << ") w:" << (obj.extent_x->getX()*2) << " h:" << (obj.extent_y->getY()*2) << " h:" << (obj.extent_z->getZ()*2);
+                      ^~~~~~
+SFBoundingBox.cc:74:52: error: request for member ‘centre’ in ‘obj’, which is of non-class type ‘const int’
+   os << "c:(" << obj.centre->getX() << ", " << obj.centre->getY() << ") w:" << (obj.extent_x->getX()*2) << " h:" << (obj.extent_y->getY()*2) << " h:" << (obj.extent_z->getZ()*2);
+                                                    ^~~~~~
+SFBoundingBox.cc:74:85: error: request for member ‘extent_x’ in ‘obj’, which is of non-class type ‘const int’
+   os << "c:(" << obj.centre->getX() << ", " << obj.centre->getY() << ") w:" << (obj.extent_x->getX()*2) << " h:" << (obj.extent_y->getY()*2) << " h:" << (obj.extent_z->getZ()*2);
+                                                                                     ^~~~~~~~
+SFBoundingBox.cc:74:122: error: request for member ‘extent_y’ in ‘obj’, which is of non-class type ‘const int’
+ >getX() << ", " << obj.centre->getY() << ") w:" << (obj.extent_x->getX()*2) << " h:" << (obj.extent_y->getY()*2) << " h:" << (obj.extent_z->getZ()*2);
+                                                                                              ^~~~~~~~
+SFBoundingBox.cc:74:159: error: request for member ‘extent_z’ in ‘obj’, which is of non-class type ‘const int’
+  << ") w:" << (obj.extent_x->getX()*2) << " h:" << (obj.extent_y->getY()*2) << " h:" << (obj.extent_z->getZ()*2);
+                                                                                              ^~~~~~~~
+Makefile:647: recipe for target 'SFBoundingBox.o' failed
+make[2]: *** [SFBoundingBox.o] Error 1
+make[2]: Leaving directory '/home/zyong/alan/src'
+Makefile:415: recipe for target 'all-recursive' failed
+make[1]: *** [all-recursive] Error 1
+make[1]: Leaving directory '/home/zyong/alan'
+Makefile:347: recipe for target 'all' failed
+make: *** [all] Error 2
+[zyong@localhost alan]$ make
+make  all-recursive
+make[1]: Entering directory '/home/zyong/alan'
+Making all in shaders
+make[2]: Entering directory '/home/zyong/alan/shaders'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/zyong/alan/shaders'
+Making all in src
+make[2]: Entering directory '/home/zyong/alan/src'
+depbase=`echo SFBoundingBox.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+g++ -DHAVE_CONFIG_H -I. -I..  -DGL_GLEXT_PROTOTYPES -DGL3_PROTOTYPES -std=c++11 -I/usr/include/libdrm -I/usr/include/libdrm -D_REENTRANT -I/usr/include/SDL2    -g -O2 -MT SFBoundingBox.o -MD -MP -MF $depbase.Tpo -c -o SFBoundingBox.o SFBoundingBox.cc &&\
+mv -f $depbase.Tpo $depbase.Po
+In file included from SFBoundingBox.cc:1:0:
+SFBoundingBox.h:12:21: error: expected unqualified-id before ‘,’ token
+ enum AXIS {X, Y, Z} ,
+                     ^
+SFBoundingBox.h:14:1: error: expected unqualified-id before ‘class’
+ class SFBoundingBox {
+ ^~~~~
+SFBoundingBox.cc:3:1: error: ‘SFBoundingBox’ does not name a type
+ SFBoundingBox::SFBoundingBox(const Vector3 centre,
+ ^~~~~~~~~~~~~
+SFBoundingBox.cc:13:1: error: ‘SFBoundingBox’ does not name a type
+ SFBoundingBox::~SFBoundingBox() {
+ ^~~~~~~~~~~~~
+SFBoundingBox.cc:20:6: error: ‘SFBoundingBox’ has not been declared
+ void SFBoundingBox::SetCentre(Vector3 & v) {
+      ^~~~~~~~~~~~~
+SFBoundingBox.cc: In function ‘void SetCentre(Vector3&)’:
+SFBoundingBox.cc:21:3: error: ‘centre’ was not declared in this scope
+   centre = make_shared<Vector3>(v);
+   ^~~~~~
+SFBoundingBox.cc: At global scope:
+SFBoundingBox.cc:31:19: error: ‘SFBoundingBox’ has not been declared
+ pair<float,float> SFBoundingBox::projectOntoAxis(const SFBoundingBox & b, enum AXIS axis) {
+                   ^~~~~~~~~~~~~
+SFBoundingBox.cc:31:56: error: ‘SFBoundingBox’ does not name a type
+ pair<float,float> SFBoundingBox::projectOntoAxis(const SFBoundingBox & b, enum AXIS axis) {
+                                                        ^~~~~~~~~~~~~
+SFBoundingBox.cc: In function ‘std::pair<float, float> projectOntoAxis(const int&, AXIS)’:
+SFBoundingBox.cc:37:23: error: request for member ‘extent_x’ in ‘b’, which is of non-class type ‘const int’
+       Vector3 bx = *b.extent_x;
+                       ^~~~~~~~
+SFBoundingBox.cc:38:44: error: request for member ‘centre’ in ‘b’, which is of non-class type ‘const int’
+       lo  = projection( Point2(Vector3(*(b.centre)) + (bx * -1)), xAxis());
+                                            ^~~~~~
+SFBoundingBox.cc:38:64: error: ‘Point2’ was not declared in this scope
+       lo  = projection( Point2(Vector3(*(b.centre)) + (bx * -1)), xAxis());
+                                                                ^
+SFBoundingBox.cc:39:44: error: request for member ‘centre’ in ‘b’, which is of non-class type ‘const int’
+       hi  = projection( Point2(Vector3(*(b.centre)) + bx), xAxis());
+                                            ^~~~~~
+SFBoundingBox.cc:44:23: error: request for member ‘extent_y’ in ‘b’, which is of non-class type ‘const int’
+       Vector3 by = *b.extent_y;
+                       ^~~~~~~~
+SFBoundingBox.cc:45:44: error: request for member ‘centre’ in ‘b’, which is of non-class type ‘const int’
+       lo  = projection( Point2(Vector3(*(b.centre)) + (by * -1)), yAxis());
+                                            ^~~~~~
+SFBoundingBox.cc:45:64: error: ‘Point2’ was not declared in this scope
+       lo  = projection( Point2(Vector3(*(b.centre)) + (by * -1)), yAxis());
+                                                                ^
+SFBoundingBox.cc:46:44: error: request for member ‘centre’ in ‘b’, which is of non-class type ‘const int’
+       hi  = projection( Point2(Vector3(*(b.centre)) + by), yAxis());
+                                            ^~~~~~
+SFBoundingBox.cc:51:23: error: request for member ‘extent_z’ in ‘b’, which is of non-class type ‘const int’
+       Vector3 bz = *b.extent_z;
+                       ^~~~~~~~
+SFBoundingBox.cc:52:44: error: request for member ‘centre’ in ‘b’, which is of non-class type ‘const int’
+       lo  = projection( Point2(Vector3(*(b.centre)) + (bz * -1)), zAxis());
+                                            ^~~~~~
+SFBoundingBox.cc:52:64: error: ‘Point2’ was not declared in this scope
+       lo  = projection( Point2(Vector3(*(b.centre)) + (bz * -1)), zAxis());
+                                                                ^
+SFBoundingBox.cc:53:44: error: request for member ‘centre’ in ‘b’, which is of non-class type ‘const int’
+       hi  = projection( Point2(Vector3(*(b.centre)) + bz), zAxis());
+                                            ^~~~~~
+SFBoundingBox.cc: At global scope:
+SFBoundingBox.cc:61:6: error: ‘SFBoundingBox’ has not been declared
+ bool SFBoundingBox::CollidesWith(const shared_ptr<SFBoundingBox> b) {
+      ^~~~~~~~~~~~~
+SFBoundingBox.cc:61:51: error: ‘SFBoundingBox’ was not declared in this scope
+ bool SFBoundingBox::CollidesWith(const shared_ptr<SFBoundingBox> b) {
+                                                   ^~~~~~~~~~~~~
+SFBoundingBox.cc:61:64: error: template argument 1 is invalid
+ bool SFBoundingBox::CollidesWith(const shared_ptr<SFBoundingBox> b) {
+                                                                ^
+SFBoundingBox.cc: In function ‘bool CollidesWith(int)’:
+SFBoundingBox.cc:62:50: error: invalid use of ‘this’ in non-member function
+   pair<float, float> a_x_proj = projectOntoAxis(*this, X),
+                                                  ^~~~
+SFBoundingBox.cc:67:5: error: ‘b_z_proj’ was not declared in this scope
+     b_z_proj = projectOntoAxis(*b, Z);
+     ^~~~~~~~
+SFBoundingBox.cc:67:33: error: invalid type argument of unary ‘*’ (have ‘int’)
+     b_z_proj = projectOntoAxis(*b, Z);
+                                 ^
+SFBoundingBox.cc:69:31: error: ‘b_x_proj’ was not declared in this scope
+   return (straddles(a_x_proj, b_x_proj)) && (straddles(a_y_proj, b_y_proj) && (straddles(a_z_proj, b_z_proj));
+                               ^~~~~~~~
+SFBoundingBox.cc:69:56: error: ‘a_y_proj’ was not declared in this scope
+   return (straddles(a_x_proj, b_x_proj)) && (straddles(a_y_proj, b_y_proj) && (straddles(a_z_proj, b_z_proj));
+                                                        ^~~~~~~~
+SFBoundingBox.cc:69:66: error: ‘b_y_proj’ was not declared in this scope
+   return (straddles(a_x_proj, b_x_proj)) && (straddles(a_y_proj, b_y_proj) && (straddles(a_z_proj, b_z_proj));
+                                                                  ^~~~~~~~
+SFBoundingBox.cc:69:90: error: ‘a_z_proj’ was not declared in this scope
+   return (straddles(a_x_proj, b_x_proj)) && (straddles(a_y_proj, b_y_proj) && (straddles(a_z_proj, b_z_proj));
+                                                                                          ^~~~~~~~
+SFBoundingBox.cc:69:110: error: expected ‘)’ before ‘;’ token
+ rn (straddles(a_x_proj, b_x_proj)) && (straddles(a_y_proj, b_y_proj) && (straddles(a_z_proj, b_z_proj));
+                                                                                                        ^
+SFBoundingBox.cc: At global scope:
+SFBoundingBox.cc:73:40: error: ‘SFBoundingBox’ does not name a type
+ ostream& operator<<(ostream& os, const SFBoundingBox& obj) {
+                                        ^~~~~~~~~~~~~
+SFBoundingBox.cc: In function ‘std::ostream& operator<<(std::ostream&, const int&)’:
+SFBoundingBox.cc:74:22: error: request for member ‘centre’ in ‘obj’, which is of non-class type ‘const int’
+   os << "c:(" << obj.centre->getX() << ", " << obj.centre->getY() << ") w:" << (obj.extent_x->getX()*2) << " h:" << (obj.extent_y->getY()*2) << " h:");
+                      ^~~~~~
+SFBoundingBox.cc:74:52: error: request for member ‘centre’ in ‘obj’, which is of non-class type ‘const int’
+   os << "c:(" << obj.centre->getX() << ", " << obj.centre->getY() << ") w:" << (obj.extent_x->getX()*2) << " h:" << (obj.extent_y->getY()*2) << " h:");
+                                                    ^~~~~~
+SFBoundingBox.cc:74:85: error: request for member ‘extent_x’ in ‘obj’, which is of non-class type ‘const int’
+   os << "c:(" << obj.centre->getX() << ", " << obj.centre->getY() << ") w:" << (obj.extent_x->getX()*2) << " h:" << (obj.extent_y->getY()*2) << " h:");
+                                                                                     ^~~~~~~~
+SFBoundingBox.cc:74:122: error: request for member ‘extent_y’ in ‘obj’, which is of non-class type ‘const int’
+ >getX() << ", " << obj.centre->getY() << ") w:" << (obj.extent_x->getX()*2) << " h:" << (obj.extent_y->getY()*2) << " h:");
+                                                                                              ^~~~~~~~
+Makefile:647: recipe for target 'SFBoundingBox.o' failed
+make[2]: *** [SFBoundingBox.o] Error 1
+make[2]: Leaving directory '/home/zyong/alan/src'
+Makefile:415: recipe for target 'all-recursive' failed
+make[1]: *** [all-recursive] Error 1
+make[1]: Leaving directory '/home/zyong/alan'
+Makefile:347: recipe for target 'all' failed
+make: *** [all] Error 2
+[zyong@localhost alan]$ make
+make  all-recursive
+make[1]: Entering directory '/home/zyong/alan'
+Making all in shaders
+make[2]: Entering directory '/home/zyong/alan/shaders'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/zyong/alan/shaders'
+Making all in src
+make[2]: Entering directory '/home/zyong/alan/src'
+depbase=`echo SFBoundingBox.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+g++ -DHAVE_CONFIG_H -I. -I..  -DGL_GLEXT_PROTOTYPES -DGL3_PROTOTYPES -std=c++11 -I/usr/include/libdrm -I/usr/include/libdrm -D_REENTRANT -I/usr/include/SDL2    -g -O2 -MT SFBoundingBox.o -MD -MP -MF $depbase.Tpo -c -o SFBoundingBox.o SFBoundingBox.cc &&\
+mv -f $depbase.Tpo $depbase.Po
+In file included from SFBoundingBox.cc:1:0:
+SFBoundingBox.h:12:21: error: expected unqualified-id before ‘,’ token
+ enum AXIS {X, Y, Z} ,
+                     ^
+SFBoundingBox.h:14:1: error: expected unqualified-id before ‘class’
+ class SFBoundingBox {
+ ^~~~~
+SFBoundingBox.cc:3:1: error: ‘SFBoundingBox’ does not name a type
+ SFBoundingBox::SFBoundingBox(const Vector3 centre,
+ ^~~~~~~~~~~~~
+SFBoundingBox.cc:13:1: error: ‘SFBoundingBox’ does not name a type
+ SFBoundingBox::~SFBoundingBox() {
+ ^~~~~~~~~~~~~
+SFBoundingBox.cc:20:6: error: ‘SFBoundingBox’ has not been declared
+ void SFBoundingBox::SetCentre(Vector3 & v) {
+      ^~~~~~~~~~~~~
+SFBoundingBox.cc: In function ‘void SetCentre(Vector3&)’:
+SFBoundingBox.cc:21:3: error: ‘centre’ was not declared in this scope
+   centre = make_shared<Vector3>(v);
+   ^~~~~~
+SFBoundingBox.cc: At global scope:
+SFBoundingBox.cc:31:19: error: ‘SFBoundingBox’ has not been declared
+ pair<float,float> SFBoundingBox::projectOntoAxis(const SFBoundingBox & b, enum AXIS axis) {
+                   ^~~~~~~~~~~~~
+SFBoundingBox.cc:31:56: error: ‘SFBoundingBox’ does not name a type
+ pair<float,float> SFBoundingBox::projectOntoAxis(const SFBoundingBox & b, enum AXIS axis) {
+                                                        ^~~~~~~~~~~~~
+SFBoundingBox.cc: In function ‘std::pair<float, float> projectOntoAxis(const int&, AXIS)’:
+SFBoundingBox.cc:37:23: error: request for member ‘extent_x’ in ‘b’, which is of non-class type ‘const int’
+       Vector3 bx = *b.extent_x;
+                       ^~~~~~~~
+SFBoundingBox.cc:38:44: error: request for member ‘centre’ in ‘b’, which is of non-class type ‘const int’
+       lo  = projection( Point2(Vector3(*(b.centre)) + (bx * -1)), xAxis());
+                                            ^~~~~~
+SFBoundingBox.cc:38:64: error: ‘Point2’ was not declared in this scope
+       lo  = projection( Point2(Vector3(*(b.centre)) + (bx * -1)), xAxis());
+                                                                ^
+SFBoundingBox.cc:39:44: error: request for member ‘centre’ in ‘b’, which is of non-class type ‘const int’
+       hi  = projection( Point2(Vector3(*(b.centre)) + bx), xAxis());
+                                            ^~~~~~
+SFBoundingBox.cc:44:23: error: request for member ‘extent_y’ in ‘b’, which is of non-class type ‘const int’
+       Vector3 by = *b.extent_y;
+                       ^~~~~~~~
+SFBoundingBox.cc:45:44: error: request for member ‘centre’ in ‘b’, which is of non-class type ‘const int’
+       lo  = projection( Point2(Vector3(*(b.centre)) + (by * -1)), yAxis());
+                                            ^~~~~~
+SFBoundingBox.cc:45:64: error: ‘Point2’ was not declared in this scope
+       lo  = projection( Point2(Vector3(*(b.centre)) + (by * -1)), yAxis());
+                                                                ^
+SFBoundingBox.cc:46:44: error: request for member ‘centre’ in ‘b’, which is of non-class type ‘const int’
+       hi  = projection( Point2(Vector3(*(b.centre)) + by), yAxis());
+                                            ^~~~~~
+SFBoundingBox.cc:51:23: error: request for member ‘extent_z’ in ‘b’, which is of non-class type ‘const int’
+       Vector3 bz = *b.extent_z;
+                       ^~~~~~~~
+SFBoundingBox.cc:52:44: error: request for member ‘centre’ in ‘b’, which is of non-class type ‘const int’
+       lo  = projection( Point2(Vector3(*(b.centre)) + (bz * -1)), zAxis());
+                                            ^~~~~~
+SFBoundingBox.cc:52:64: error: ‘Point2’ was not declared in this scope
+       lo  = projection( Point2(Vector3(*(b.centre)) + (bz * -1)), zAxis());
+                                                                ^
+SFBoundingBox.cc:53:44: error: request for member ‘centre’ in ‘b’, which is of non-class type ‘const int’
+       hi  = projection( Point2(Vector3(*(b.centre)) + bz), zAxis());
+                                            ^~~~~~
+SFBoundingBox.cc: At global scope:
+SFBoundingBox.cc:61:6: error: ‘SFBoundingBox’ has not been declared
+ bool SFBoundingBox::CollidesWith(const shared_ptr<SFBoundingBox> b) {
+      ^~~~~~~~~~~~~
+SFBoundingBox.cc:61:51: error: ‘SFBoundingBox’ was not declared in this scope
+ bool SFBoundingBox::CollidesWith(const shared_ptr<SFBoundingBox> b) {
+                                                   ^~~~~~~~~~~~~
+SFBoundingBox.cc:61:64: error: template argument 1 is invalid
+ bool SFBoundingBox::CollidesWith(const shared_ptr<SFBoundingBox> b) {
+                                                                ^
+SFBoundingBox.cc: In function ‘bool CollidesWith(int)’:
+SFBoundingBox.cc:62:50: error: invalid use of ‘this’ in non-member function
+   pair<float, float> a_x_proj = projectOntoAxis(*this, X),
+                                                  ^~~~
+SFBoundingBox.cc:67:5: error: ‘b_z_proj’ was not declared in this scope
+     b_z_proj = projectOntoAxis(*b, Z);
+     ^~~~~~~~
+SFBoundingBox.cc:67:33: error: invalid type argument of unary ‘*’ (have ‘int’)
+     b_z_proj = projectOntoAxis(*b, Z);
+                                 ^
+SFBoundingBox.cc:69:31: error: ‘b_x_proj’ was not declared in this scope
+   return (straddles(a_x_proj, b_x_proj)) && (straddles(a_y_proj, b_y_proj) && (straddles(a_z_proj, b_z_proj));
+                               ^~~~~~~~
+SFBoundingBox.cc:69:56: error: ‘a_y_proj’ was not declared in this scope
+   return (straddles(a_x_proj, b_x_proj)) && (straddles(a_y_proj, b_y_proj) && (straddles(a_z_proj, b_z_proj));
+                                                        ^~~~~~~~
+SFBoundingBox.cc:69:66: error: ‘b_y_proj’ was not declared in this scope
+   return (straddles(a_x_proj, b_x_proj)) && (straddles(a_y_proj, b_y_proj) && (straddles(a_z_proj, b_z_proj));
+                                                                  ^~~~~~~~
+SFBoundingBox.cc:69:90: error: ‘a_z_proj’ was not declared in this scope
+   return (straddles(a_x_proj, b_x_proj)) && (straddles(a_y_proj, b_y_proj) && (straddles(a_z_proj, b_z_proj));
+                                                                                          ^~~~~~~~
+SFBoundingBox.cc:69:110: error: expected ‘)’ before ‘;’ token
+ rn (straddles(a_x_proj, b_x_proj)) && (straddles(a_y_proj, b_y_proj) && (straddles(a_z_proj, b_z_proj));
+                                                                                                        ^
+SFBoundingBox.cc: At global scope:
+SFBoundingBox.cc:73:40: error: ‘SFBoundingBox’ does not name a type
+ ostream& operator<<(ostream& os, const SFBoundingBox& obj) {
+                                        ^~~~~~~~~~~~~
+SFBoundingBox.cc: In function ‘std::ostream& operator<<(std::ostream&, const int&)’:
+SFBoundingBox.cc:74:22: error: request for member ‘centre’ in ‘obj’, which is of non-class type ‘const int’
+   os << "c:(" << obj.centre->getX() << ", " << obj.centre->getY() << ") w:" << (obj.extent_x->getX()*2) << " h:" << (obj.extent_y->getY()*2) << " h:");
+                      ^~~~~~
+SFBoundingBox.cc:74:52: error: request for member ‘centre’ in ‘obj’, which is of non-class type ‘const int’
+   os << "c:(" << obj.centre->getX() << ", " << obj.centre->getY() << ") w:" << (obj.extent_x->getX()*2) << " h:" << (obj.extent_y->getY()*2) << " h:");
+                                                    ^~~~~~
+SFBoundingBox.cc:74:85: error: request for member ‘extent_x’ in ‘obj’, which is of non-class type ‘const int’
+   os << "c:(" << obj.centre->getX() << ", " << obj.centre->getY() << ") w:" << (obj.extent_x->getX()*2) << " h:" << (obj.extent_y->getY()*2) << " h:");
+                                                                                     ^~~~~~~~
+SFBoundingBox.cc:74:122: error: request for member ‘extent_y’ in ‘obj’, which is of non-class type ‘const int’
+ >getX() << ", " << obj.centre->getY() << ") w:" << (obj.extent_x->getX()*2) << " h:" << (obj.extent_y->getY()*2) << " h:");
+                                                                                              ^~~~~~~~
+Makefile:647: recipe for target 'SFBoundingBox.o' failed
+make[2]: *** [SFBoundingBox.o] Error 1
+make[2]: Leaving directory '/home/zyong/alan/src'
+Makefile:415: recipe for target 'all-recursive' failed
+make[1]: *** [all-recursive] Error 1
+make[1]: Leaving directory '/home/zyong/alan'
+Makefile:347: recipe for target 'all' failed
+make: *** [all] Error 2
+[zyong@localhost alan]$ make
+make  all-recursive
+make[1]: Entering directory '/home/zyong/alan'
+Making all in shaders
+make[2]: Entering directory '/home/zyong/alan/shaders'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/zyong/alan/shaders'
+Making all in src
+make[2]: Entering directory '/home/zyong/alan/src'
+depbase=`echo SFBoundingBox.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+g++ -DHAVE_CONFIG_H -I. -I..  -DGL_GLEXT_PROTOTYPES -DGL3_PROTOTYPES -std=c++11 -I/usr/include/libdrm -I/usr/include/libdrm -D_REENTRANT -I/usr/include/SDL2    -g -O2 -MT SFBoundingBox.o -MD -MP -MF $depbase.Tpo -c -o SFBoundingBox.o SFBoundingBox.cc &&\
+mv -f $depbase.Tpo $depbase.Po
+In file included from SFBoundingBox.cc:1:0:
+SFBoundingBox.h:12:21: error: expected unqualified-id before ‘,’ token
+ enum AXIS {X, Y, Z} ,
+                     ^
+SFBoundingBox.h:14:1: error: expected unqualified-id before ‘class’
+ class SFBoundingBox {
+ ^~~~~
+SFBoundingBox.cc:3:1: error: ‘SFBoundingBox’ does not name a type
+ SFBoundingBox::SFBoundingBox(const Vector3 centre,
+ ^~~~~~~~~~~~~
+SFBoundingBox.cc:13:1: error: ‘SFBoundingBox’ does not name a type
+ SFBoundingBox::~SFBoundingBox() {
+ ^~~~~~~~~~~~~
+SFBoundingBox.cc:20:6: error: ‘SFBoundingBox’ has not been declared
+ void SFBoundingBox::SetCentre(Vector3 & v) {
+      ^~~~~~~~~~~~~
+SFBoundingBox.cc: In function ‘void SetCentre(Vector3&)’:
+SFBoundingBox.cc:21:3: error: ‘centre’ was not declared in this scope
+   centre = make_shared<Vector3>(v);
+   ^~~~~~
+SFBoundingBox.cc: At global scope:
+SFBoundingBox.cc:31:19: error: ‘SFBoundingBox’ has not been declared
+ pair<float,float> SFBoundingBox::projectOntoAxis(const SFBoundingBox & b, enum AXIS axis) {
+                   ^~~~~~~~~~~~~
+SFBoundingBox.cc:31:56: error: ‘SFBoundingBox’ does not name a type
+ pair<float,float> SFBoundingBox::projectOntoAxis(const SFBoundingBox & b, enum AXIS axis) {
+                                                        ^~~~~~~~~~~~~
+SFBoundingBox.cc: In function ‘std::pair<float, float> projectOntoAxis(const int&, AXIS)’:
+SFBoundingBox.cc:37:23: error: request for member ‘extent_x’ in ‘b’, which is of non-class type ‘const int’
+       Vector3 bx = *b.extent_x;
+                       ^~~~~~~~
+SFBoundingBox.cc:38:44: error: request for member ‘centre’ in ‘b’, which is of non-class type ‘const int’
+       lo  = projection( Point3(Vector3(*(b.centre)) + (bx * -1)), xAxis());
+                                            ^~~~~~
+SFBoundingBox.cc:39:44: error: request for member ‘centre’ in ‘b’, which is of non-class type ‘const int’
+       hi  = projection( Point3(Vector3(*(b.centre)) + bx), xAxis());
+                                            ^~~~~~
+SFBoundingBox.cc:44:23: error: request for member ‘extent_y’ in ‘b’, which is of non-class type ‘const int’
+       Vector3 by = *b.extent_y;
+                       ^~~~~~~~
+SFBoundingBox.cc:45:44: error: request for member ‘centre’ in ‘b’, which is of non-class type ‘const int’
+       lo  = projection( Point3(Vector3(*(b.centre)) + (by * -1)), yAxis());
+                                            ^~~~~~
+SFBoundingBox.cc:46:44: error: request for member ‘centre’ in ‘b’, which is of non-class type ‘const int’
+       hi  = projection( Point3(Vector3(*(b.centre)) + by), yAxis());
+                                            ^~~~~~
+SFBoundingBox.cc:51:23: error: request for member ‘extent_z’ in ‘b’, which is of non-class type ‘const int’
+       Vector3 bz = *b.extent_z;
+                       ^~~~~~~~
+SFBoundingBox.cc:52:44: error: request for member ‘centre’ in ‘b’, which is of non-class type ‘const int’
+       lo  = projection( Point3(Vector3(*(b.centre)) + (bz * -1)), zAxis());
+                                            ^~~~~~
+SFBoundingBox.cc:53:44: error: request for member ‘centre’ in ‘b’, which is of non-class type ‘const int’
+       hi  = projection( Point3(Vector3(*(b.centre)) + bz), zAxis());
+                                            ^~~~~~
+SFBoundingBox.cc: At global scope:
+SFBoundingBox.cc:61:6: error: ‘SFBoundingBox’ has not been declared
+ bool SFBoundingBox::CollidesWith(const shared_ptr<SFBoundingBox> b) {
+      ^~~~~~~~~~~~~
+SFBoundingBox.cc:61:51: error: ‘SFBoundingBox’ was not declared in this scope
+ bool SFBoundingBox::CollidesWith(const shared_ptr<SFBoundingBox> b) {
+                                                   ^~~~~~~~~~~~~
+SFBoundingBox.cc:61:64: error: template argument 1 is invalid
+ bool SFBoundingBox::CollidesWith(const shared_ptr<SFBoundingBox> b) {
+                                                                ^
+SFBoundingBox.cc: In function ‘bool CollidesWith(int)’:
+SFBoundingBox.cc:62:50: error: invalid use of ‘this’ in non-member function
+   pair<float, float> a_x_proj = projectOntoAxis(*this, X),
+                                                  ^~~~
+SFBoundingBox.cc:67:5: error: ‘b_z_proj’ was not declared in this scope
+     b_z_proj = projectOntoAxis(*b, Z);
+     ^~~~~~~~
+SFBoundingBox.cc:67:33: error: invalid type argument of unary ‘*’ (have ‘int’)
+     b_z_proj = projectOntoAxis(*b, Z);
+                                 ^
+SFBoundingBox.cc:69:31: error: ‘b_x_proj’ was not declared in this scope
+   return (straddles(a_x_proj, b_x_proj)) && (straddles(a_y_proj, b_y_proj) && (straddles(a_z_proj, b_z_proj));
+                               ^~~~~~~~
+SFBoundingBox.cc:69:56: error: ‘a_y_proj’ was not declared in this scope
+   return (straddles(a_x_proj, b_x_proj)) && (straddles(a_y_proj, b_y_proj) && (straddles(a_z_proj, b_z_proj));
+                                                        ^~~~~~~~
+SFBoundingBox.cc:69:66: error: ‘b_y_proj’ was not declared in this scope
+   return (straddles(a_x_proj, b_x_proj)) && (straddles(a_y_proj, b_y_proj) && (straddles(a_z_proj, b_z_proj));
+                                                                  ^~~~~~~~
+SFBoundingBox.cc:69:90: error: ‘a_z_proj’ was not declared in this scope
+   return (straddles(a_x_proj, b_x_proj)) && (straddles(a_y_proj, b_y_proj) && (straddles(a_z_proj, b_z_proj));
+                                                                                          ^~~~~~~~
+SFBoundingBox.cc:69:110: error: expected ‘)’ before ‘;’ token
+ rn (straddles(a_x_proj, b_x_proj)) && (straddles(a_y_proj, b_y_proj) && (straddles(a_z_proj, b_z_proj));
+                                                                                                        ^
+SFBoundingBox.cc: At global scope:
+SFBoundingBox.cc:73:40: error: ‘SFBoundingBox’ does not name a type
+ ostream& operator<<(ostream& os, const SFBoundingBox& obj) {
+                                        ^~~~~~~~~~~~~
+SFBoundingBox.cc: In function ‘std::ostream& operator<<(std::ostream&, const int&)’:
+SFBoundingBox.cc:74:22: error: request for member ‘centre’ in ‘obj’, which is of non-class type ‘const int’
+   os << "c:(" << obj.centre->getX() << ", " << obj.centre->getY() << ") w:" << (obj.extent_x->getX()*2) << " h:" << (obj.extent_y->getY()*2);
+                      ^~~~~~
+SFBoundingBox.cc:74:52: error: request for member ‘centre’ in ‘obj’, which is of non-class type ‘const int’
+   os << "c:(" << obj.centre->getX() << ", " << obj.centre->getY() << ") w:" << (obj.extent_x->getX()*2) << " h:" << (obj.extent_y->getY()*2);
+                                                    ^~~~~~
+SFBoundingBox.cc:74:85: error: request for member ‘extent_x’ in ‘obj’, which is of non-class type ‘const int’
+   os << "c:(" << obj.centre->getX() << ", " << obj.centre->getY() << ") w:" << (obj.extent_x->getX()*2) << " h:" << (obj.extent_y->getY()*2);
+                                                                                     ^~~~~~~~
+SFBoundingBox.cc:74:122: error: request for member ‘extent_y’ in ‘obj’, which is of non-class type ‘const int’
+ >getX() << ", " << obj.centre->getY() << ") w:" << (obj.extent_x->getX()*2) << " h:" << (obj.extent_y->getY()*2);
+                                                                                              ^~~~~~~~
+Makefile:647: recipe for target 'SFBoundingBox.o' failed
+make[2]: *** [SFBoundingBox.o] Error 1
+make[2]: Leaving directory '/home/zyong/alan/src'
+Makefile:415: recipe for target 'all-recursive' failed
+make[1]: *** [all-recursive] Error 1
+make[1]: Leaving directory '/home/zyong/alan'
+Makefile:347: recipe for target 'all' failed
+make: *** [all] Error 2
+[zyong@localhost alan]$ make
+make  all-recursive
+make[1]: Entering directory '/home/zyong/alan'
+Making all in shaders
+make[2]: Entering directory '/home/zyong/alan/shaders'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/zyong/alan/shaders'
+Making all in src
+make[2]: Entering directory '/home/zyong/alan/src'
+depbase=`echo SFBoundingBox.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+g++ -DHAVE_CONFIG_H -I. -I..  -DGL_GLEXT_PROTOTYPES -DGL3_PROTOTYPES -std=c++11 -I/usr/include/libdrm -I/usr/include/libdrm -D_REENTRANT -I/usr/include/SDL2    -g -O2 -MT SFBoundingBox.o -MD -MP -MF $depbase.Tpo -c -o SFBoundingBox.o SFBoundingBox.cc &&\
+mv -f $depbase.Tpo $depbase.Po
+In file included from SFBoundingBox.cc:1:0:
+SFBoundingBox.h:16:23: error: ‘Vector2’ does not name a type
+   SFBoundingBox(const Vector2, const float, const float);
+                       ^~~~~~~
+SFBoundingBox.h:18:18: error: ‘Vector2’ has not been declared
+   void SetCentre(Vector2 &);
+                  ^~~~~~~
+SFBoundingBox.h:23:14: error: ‘Vector2’ was not declared in this scope
+   shared_ptr<Vector2> centre, extent_x, extent_y;
+              ^~~~~~~
+SFBoundingBox.h:23:21: error: template argument 1 is invalid
+   shared_ptr<Vector2> centre, extent_x, extent_y;
+                     ^
+SFBoundingBox.cc:3:1: error: prototype for ‘SFBoundingBox::SFBoundingBox(Vector3, float, float, float)’ does not match any in class ‘SFBoundingBox’
+ SFBoundingBox::SFBoundingBox(const Vector3 centre,
+ ^~~~~~~~~~~~~
+In file included from SFBoundingBox.cc:1:0:
+SFBoundingBox.h:14:7: error: candidates are: constexpr SFBoundingBox::SFBoundingBox(const SFBoundingBox&)
+ class SFBoundingBox {
+       ^~~~~~~~~~~~~
+SFBoundingBox.h:16:3: error:                 SFBoundingBox::SFBoundingBox(int, float, float)
+   SFBoundingBox(const Vector2, const float, const float);
+   ^~~~~~~~~~~~~
+SFBoundingBox.cc: In destructor ‘virtual SFBoundingBox::~SFBoundingBox()’:
+SFBoundingBox.cc:14:10: error: request for member ‘reset’ in ‘((SFBoundingBox*)this)->SFBoundingBox::centre’, which is of non-class type ‘int’
+   centre.reset();
+          ^~~~~
+SFBoundingBox.cc:15:12: error: request for member ‘reset’ in ‘((SFBoundingBox*)this)->SFBoundingBox::extent_x’, which is of non-class type ‘int’
+   extent_x.reset();
+            ^~~~~
+SFBoundingBox.cc:16:12: error: request for member ‘reset’ in ‘((SFBoundingBox*)this)->SFBoundingBox::extent_y’, which is of non-class type ‘int’
+   extent_y.reset();
+            ^~~~~
+SFBoundingBox.cc:17:3: error: ‘extent_z’ was not declared in this scope
+   extent_z.reset();
+   ^~~~~~~~
+SFBoundingBox.cc: At global scope:
+SFBoundingBox.cc:20:6: error: prototype for ‘void SFBoundingBox::SetCentre(Vector3&)’ does not match any in class ‘SFBoundingBox’
+ void SFBoundingBox::SetCentre(Vector3 & v) {
+      ^~~~~~~~~~~~~
+In file included from SFBoundingBox.cc:1:0:
+SFBoundingBox.h:18:8: error: candidate is: void SFBoundingBox::SetCentre(int&)
+   void SetCentre(Vector2 &);
+        ^~~~~~~~~
+SFBoundingBox.cc: In member function ‘std::pair<float, float> SFBoundingBox::projectOntoAxis(const SFBoundingBox&, AXIS)’:
+SFBoundingBox.cc:37:23: error: invalid type argument of unary ‘*’ (have ‘int’)
+       Vector3 bx = *b.extent_x;
+                       ^~~~~~~~
+SFBoundingBox.cc:38:50: error: invalid type argument of unary ‘*’ (have ‘int’)
+       lo  = projection( Point3(Vector3(*(b.centre)) + (bx * -1)), xAxis());
+                                                  ^
+SFBoundingBox.cc:39:50: error: invalid type argument of unary ‘*’ (have ‘int’)
+       hi  = projection( Point3(Vector3(*(b.centre)) + bx), xAxis());
+                                                  ^
+SFBoundingBox.cc:44:23: error: invalid type argument of unary ‘*’ (have ‘int’)
+       Vector3 by = *b.extent_y;
+                       ^~~~~~~~
+SFBoundingBox.cc:45:50: error: invalid type argument of unary ‘*’ (have ‘int’)
+       lo  = projection( Point3(Vector3(*(b.centre)) + (by * -1)), yAxis());
+                                                  ^
+SFBoundingBox.cc:46:50: error: invalid type argument of unary ‘*’ (have ‘int’)
+       hi  = projection( Point3(Vector3(*(b.centre)) + by), yAxis());
+                                                  ^
+SFBoundingBox.cc:51:23: error: ‘const class SFBoundingBox’ has no member named ‘extent_z’; did you mean ‘extent_x’?
+       Vector3 bz = *b.extent_z;
+                       ^~~~~~~~
+SFBoundingBox.cc:52:50: error: invalid type argument of unary ‘*’ (have ‘int’)
+       lo  = projection( Point3(Vector3(*(b.centre)) + (bz * -1)), zAxis());
+                                                  ^
+SFBoundingBox.cc:53:50: error: invalid type argument of unary ‘*’ (have ‘int’)
+       hi  = projection( Point3(Vector3(*(b.centre)) + bz), zAxis());
+                                                  ^
+SFBoundingBox.cc: In member function ‘bool SFBoundingBox::CollidesWith(std::shared_ptr<SFBoundingBox>)’:
+SFBoundingBox.cc:67:5: error: ‘b_z_proj’ was not declared in this scope
+     b_z_proj = projectOntoAxis(*b, Z);
+     ^~~~~~~~
+SFBoundingBox.cc:69:110: error: expected ‘)’ before ‘;’ token
+ rn (straddles(a_x_proj, b_x_proj)) && (straddles(a_y_proj, b_y_proj) && (straddles(a_z_proj, b_z_proj));
+                                                                                                        ^
+SFBoundingBox.cc: In function ‘std::ostream& operator<<(std::ostream&, const SFBoundingBox&)’:
+SFBoundingBox.cc:74:28: error: base operand of ‘->’ is not a pointer
+   os << "c:(" << obj.centre->getX() << ", " << obj.centre->getY() << ") w:" << (obj.extent_x->getX()*2) << " h:" << (obj.extent_y->getY()*2);
+                            ^~
+SFBoundingBox.cc:74:58: error: base operand of ‘->’ is not a pointer
+   os << "c:(" << obj.centre->getX() << ", " << obj.centre->getY() << ") w:" << (obj.extent_x->getX()*2) << " h:" << (obj.extent_y->getY()*2);
+                                                          ^~
+SFBoundingBox.cc:74:93: error: base operand of ‘->’ is not a pointer
+   os << "c:(" << obj.centre->getX() << ", " << obj.centre->getY() << ") w:" << (obj.extent_x->getX()*2) << " h:" << (obj.extent_y->getY()*2);
+                                                                                             ^~
+SFBoundingBox.cc:74:130: error: base operand of ‘->’ is not a pointer
+ << ", " << obj.centre->getY() << ") w:" << (obj.extent_x->getX()*2) << " h:" << (obj.extent_y->getY()*2);
+                                                                                              ^~
+Makefile:647: recipe for target 'SFBoundingBox.o' failed
+make[2]: *** [SFBoundingBox.o] Error 1
+make[2]: Leaving directory '/home/zyong/alan/src'
+Makefile:415: recipe for target 'all-recursive' failed
+make[1]: *** [all-recursive] Error 1
+make[1]: Leaving directory '/home/zyong/alan'
+Makefile:347: recipe for target 'all' failed
+make: *** [all] Error 2
+[zyong@localhost alan]$ make
+make  all-recursive
+make[1]: Entering directory '/home/zyong/alan'
+Making all in shaders
+make[2]: Entering directory '/home/zyong/alan/shaders'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/zyong/alan/shaders'
+Making all in src
+make[2]: Entering directory '/home/zyong/alan/src'
+depbase=`echo SFBoundingBox.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+g++ -DHAVE_CONFIG_H -I. -I..  -DGL_GLEXT_PROTOTYPES -DGL3_PROTOTYPES -std=c++11 -I/usr/include/libdrm -I/usr/include/libdrm -D_REENTRANT -I/usr/include/SDL2    -g -O2 -MT SFBoundingBox.o -MD -MP -MF $depbase.Tpo -c -o SFBoundingBox.o SFBoundingBox.cc &&\
+mv -f $depbase.Tpo $depbase.Po
+SFBoundingBox.cc:3:1: error: prototype for ‘SFBoundingBox::SFBoundingBox(Vector3, float, float, float)’ does not match any in class ‘SFBoundingBox’
+ SFBoundingBox::SFBoundingBox(const Vector3 centre,
+ ^~~~~~~~~~~~~
+In file included from SFBoundingBox.cc:1:0:
+SFBoundingBox.h:14:7: error: candidates are: SFBoundingBox::SFBoundingBox(const SFBoundingBox&)
+ class SFBoundingBox {
+       ^~~~~~~~~~~~~
+SFBoundingBox.h:16:3: error:                 SFBoundingBox::SFBoundingBox(Vector3, float, float)
+   SFBoundingBox(const Vector3, const float, const float);
+   ^~~~~~~~~~~~~
+SFBoundingBox.cc: In destructor ‘virtual SFBoundingBox::~SFBoundingBox()’:
+SFBoundingBox.cc:17:3: error: ‘extent_z’ was not declared in this scope
+   extent_z.reset();
+   ^~~~~~~~
+SFBoundingBox.cc: In member function ‘std::pair<float, float> SFBoundingBox::projectOntoAxis(const SFBoundingBox&, AXIS)’:
+SFBoundingBox.cc:51:23: error: ‘const class SFBoundingBox’ has no member named ‘extent_z’; did you mean ‘extent_x’?
+       Vector3 bz = *b.extent_z;
+                       ^~~~~~~~
+SFBoundingBox.cc: In member function ‘bool SFBoundingBox::CollidesWith(std::shared_ptr<SFBoundingBox>)’:
+SFBoundingBox.cc:67:5: error: ‘b_z_proj’ was not declared in this scope
+     b_z_proj = projectOntoAxis(*b, Z);
+     ^~~~~~~~
+SFBoundingBox.cc:69:110: error: expected ‘)’ before ‘;’ token
+ rn (straddles(a_x_proj, b_x_proj)) && (straddles(a_y_proj, b_y_proj) && (straddles(a_z_proj, b_z_proj));
+                                                                                                        ^
+Makefile:647: recipe for target 'SFBoundingBox.o' failed
+make[2]: *** [SFBoundingBox.o] Error 1
+make[2]: Leaving directory '/home/zyong/alan/src'
+Makefile:415: recipe for target 'all-recursive' failed
+make[1]: *** [all-recursive] Error 1
+make[1]: Leaving directory '/home/zyong/alan'
+Makefile:347: recipe for target 'all' failed
+make: *** [all] Error 2
+[zyong@localhost alan]$ extenextenmake
+bash: extenextenmake: command not found...
+[zyong@localhost alan]$ make
+make  all-recursive
+make[1]: Entering directory '/home/zyong/alan'
+Making all in shaders
+make[2]: Entering directory '/home/zyong/alan/shaders'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/zyong/alan/shaders'
+Making all in src
+make[2]: Entering directory '/home/zyong/alan/src'
+depbase=`echo SFBoundingBox.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+g++ -DHAVE_CONFIG_H -I. -I..  -DGL_GLEXT_PROTOTYPES -DGL3_PROTOTYPES -std=c++11 -I/usr/include/libdrm -I/usr/include/libdrm -D_REENTRANT -I/usr/include/SDL2    -g -O2 -MT SFBoundingBox.o -MD -MP -MF $depbase.Tpo -c -o SFBoundingBox.o SFBoundingBox.cc &&\
+mv -f $depbase.Tpo $depbase.Po
+SFBoundingBox.cc:3:1: error: prototype for ‘SFBoundingBox::SFBoundingBox(Vector3, float, float, float)’ does not match any in class ‘SFBoundingBox’
+ SFBoundingBox::SFBoundingBox(const Vector3 centre,
+ ^~~~~~~~~~~~~
+In file included from SFBoundingBox.cc:1:0:
+SFBoundingBox.h:14:7: error: candidates are: SFBoundingBox::SFBoundingBox(const SFBoundingBox&)
+ class SFBoundingBox {
+       ^~~~~~~~~~~~~
+SFBoundingBox.h:16:3: error:                 SFBoundingBox::SFBoundingBox(Vector3, float, float)
+   SFBoundingBox(const Vector3, const float, const float);
+   ^~~~~~~~~~~~~
+SFBoundingBox.cc: In destructor ‘virtual SFBoundingBox::~SFBoundingBox()’:
+SFBoundingBox.cc:17:3: error: ‘extent_z’ was not declared in this scope
+   extent_z.reset();
+   ^~~~~~~~
+SFBoundingBox.cc: In member function ‘std::pair<float, float> SFBoundingBox::projectOntoAxis(const SFBoundingBox&, AXIS)’:
+SFBoundingBox.cc:51:23: error: ‘const class SFBoundingBox’ has no member named ‘extent_z’; did you mean ‘extent_x’?
+       Vector3 bz = *b.extent_z;
+                       ^~~~~~~~
+Makefile:647: recipe for target 'SFBoundingBox.o' failed
+make[2]: *** [SFBoundingBox.o] Error 1
+make[2]: Leaving directory '/home/zyong/alan/src'
+Makefile:415: recipe for target 'all-recursive' failed
+make[1]: *** [all-recursive] Error 1
+make[1]: Leaving directory '/home/zyong/alan'
+Makefile:347: recipe for target 'all' failed
+make: *** [all] Error 2
+[zyong@localhost alan]$ make
+make  all-recursive
+make[1]: Entering directory '/home/zyong/alan'
+Making all in shaders
+make[2]: Entering directory '/home/zyong/alan/shaders'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/zyong/alan/shaders'
+Making all in src
+make[2]: Entering directory '/home/zyong/alan/src'
+depbase=`echo SFBoundingBox.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+g++ -DHAVE_CONFIG_H -I. -I..  -DGL_GLEXT_PROTOTYPES -DGL3_PROTOTYPES -std=c++11 -I/usr/include/libdrm -I/usr/include/libdrm -D_REENTRANT -I/usr/include/SDL2    -g -O2 -MT SFBoundingBox.o -MD -MP -MF $depbase.Tpo -c -o SFBoundingBox.o SFBoundingBox.cc &&\
+mv -f $depbase.Tpo $depbase.Po
+SFBoundingBox.cc:3:1: error: prototype for ‘SFBoundingBox::SFBoundingBox(Vector3, float, float, float)’ does not match any in class ‘SFBoundingBox’
+ SFBoundingBox::SFBoundingBox(const Vector3 centre,
+ ^~~~~~~~~~~~~
+In file included from SFBoundingBox.cc:1:0:
+SFBoundingBox.h:14:7: error: candidates are: SFBoundingBox::SFBoundingBox(const SFBoundingBox&)
+ class SFBoundingBox {
+       ^~~~~~~~~~~~~
+SFBoundingBox.h:16:3: error:                 SFBoundingBox::SFBoundingBox(Vector3, float, float)
+   SFBoundingBox(const Vector3, const float, const float);
+   ^~~~~~~~~~~~~
+Makefile:647: recipe for target 'SFBoundingBox.o' failed
+make[2]: *** [SFBoundingBox.o] Error 1
+make[2]: Leaving directory '/home/zyong/alan/src'
+Makefile:415: recipe for target 'all-recursive' failed
+make[1]: *** [all-recursive] Error 1
+make[1]: Leaving directory '/home/zyong/alan'
+Makefile:347: recipe for target 'all' failed
+make: *** [all] Error 2
+[zyong@localhost alan]$ make
+make  all-recursive
+make[1]: Entering directory '/home/zyong/alan'
+Making all in shaders
+make[2]: Entering directory '/home/zyong/alan/shaders'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/zyong/alan/shaders'
+Making all in src
+make[2]: Entering directory '/home/zyong/alan/src'
+depbase=`echo SFBoundingBox.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+g++ -DHAVE_CONFIG_H -I. -I..  -DGL_GLEXT_PROTOTYPES -DGL3_PROTOTYPES -std=c++11 -I/usr/include/libdrm -I/usr/include/libdrm -D_REENTRANT -I/usr/include/SDL2    -g -O2 -MT SFBoundingBox.o -MD -MP -MF $depbase.Tpo -c -o SFBoundingBox.o SFBoundingBox.cc &&\
+mv -f $depbase.Tpo $depbase.Po
+/bin/sh ../libtool  --tag=CXX   --mode=link g++  -g -O2   -o shaderexample main.o GameWorld.o GameAssetManager.o CubeAsset.o SFBoundingBox.o  -lGL -lGLEW -lGLU -lGL -lSDL2  -lboost_program_options
+libtool: link: g++ -g -O2 -o shaderexample main.o GameWorld.o GameAssetManager.o CubeAsset.o SFBoundingBox.o  -lGLEW -lGLU -lGL -lSDL2 -lboost_program_options
+make[2]: Leaving directory '/home/zyong/alan/src'
+make[2]: Entering directory '/home/zyong/alan'
+make[2]: Leaving directory '/home/zyong/alan'
+make[1]: Leaving directory '/home/zyong/alan'
+[zyong@localhost alan]$ make check
+Making check in shaders
+make[1]: Entering directory '/home/zyong/alan/shaders'
+make[1]: Nothing to be done for 'check'.
+make[1]: Leaving directory '/home/zyong/alan/shaders'
+Making check in src
+make[1]: Entering directory '/home/zyong/alan/src'
+make  TestApp
+make[2]: Entering directory '/home/zyong/alan/src'
+depbase=`echo test.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+g++ -DHAVE_CONFIG_H -I. -I..  -DGL_GLEXT_PROTOTYPES -DGL3_PROTOTYPES -std=c++11 -I/usr/include/libdrm -I/usr/include/libdrm -D_REENTRANT -I/usr/include/SDL2    -g -O2 -MT test.o -MD -MP -MF $depbase.Tpo -c -o test.o test.cpp &&\
+mv -f $depbase.Tpo $depbase.Po
+/bin/sh ../libtool  --tag=CXX   --mode=link g++  -g -O2   -o TestApp test.o  -lGL -lGLEW -lGLU -lGL -lSDL2  -lboost_program_options
+libtool: link: g++ -g -O2 -o TestApp test.o  -lGLEW -lGLU -lGL -lSDL2 -lboost_program_options
+test.o: In function `init_unit_test()':
+/usr/include/boost/test/unit_test_suite.hpp:346: undefined reference to `boost::unit_test::framework::master_test_suite()'
+test.o: In function `universeInOrder::test_method()':
+/home/zyong/alan/src/test.cpp:14: undefined reference to `boost::unit_test::unit_test_log_t::set_checkpoint(boost::unit_test::basic_cstring<char const>, unsigned long, boost::unit_test::basic_cstring<char const>)'
+/home/zyong/alan/src/test.cpp:14: undefined reference to `boost::test_tools::tt_detail::report_assertion(boost::test_tools::assertion_result const&, boost::unit_test::lazy_ostream const&, boost::unit_test::basic_cstring<char const>, unsigned long, boost::test_tools::tt_detail::tool_level, boost::test_tools::tt_detail::check_type, unsigned long, ...)'
+/home/zyong/alan/src/test.cpp:15: undefined reference to `boost::unit_test::unit_test_log_t::set_checkpoint(boost::unit_test::basic_cstring<char const>, unsigned long, boost::unit_test::basic_cstring<char const>)'
+/home/zyong/alan/src/test.cpp:15: undefined reference to `boost::test_tools::tt_detail::report_assertion(boost::test_tools::assertion_result const&, boost::unit_test::lazy_ostream const&, boost::unit_test::basic_cstring<char const>, unsigned long, boost::test_tools::tt_detail::tool_level, boost::test_tools::tt_detail::check_type, unsigned long, ...)'
+test.o: In function `universeInOrder_invoker()':
+/home/zyong/alan/src/test.cpp:8: undefined reference to `boost::unit_test::unit_test_log_t::set_checkpoint(boost::unit_test::basic_cstring<char const>, unsigned long, boost::unit_test::basic_cstring<char const>)'
+/home/zyong/alan/src/test.cpp:8: undefined reference to `boost::unit_test::unit_test_log_t::set_checkpoint(boost::unit_test::basic_cstring<char const>, unsigned long, boost::unit_test::basic_cstring<char const>)'
+/home/zyong/alan/src/test.cpp:8: undefined reference to `boost::unit_test::unit_test_log_t::set_checkpoint(boost::unit_test::basic_cstring<char const>, unsigned long, boost::unit_test::basic_cstring<char const>)'
+test.o: In function `boost::unit_test::make_test_case(boost::function<void ()> const&, boost::unit_test::basic_cstring<char const>, boost::unit_test::basic_cstring<char const>, unsigned long)':
+/usr/include/boost/test/tree/test_unit.hpp:249: undefined reference to `boost::unit_test::ut_detail::normalize_test_case_name[abi:cxx11](boost::unit_test::basic_cstring<char const>)'
+/usr/include/boost/test/tree/test_unit.hpp:249: undefined reference to `boost::unit_test::test_case::test_case(boost::unit_test::basic_cstring<char const>, boost::unit_test::basic_cstring<char const>, unsigned long, boost::function<void ()> const&)'
+test.o: In function `__static_initialization_and_destruction_0':
+/home/zyong/alan/src/test.cpp:8: undefined reference to `boost::unit_test::ut_detail::auto_test_unit_registrar::auto_test_unit_registrar(boost::unit_test::test_case*, boost::unit_test::decorator::collector&, unsigned long)'
+test.o: In function `boost::unit_test::unit_test_log_t::unit_test_log_t()':
+/usr/include/boost/test/unit_test_log.hpp:127: undefined reference to `vtable for boost::unit_test::unit_test_log_t'
+test.o: In function `main':
+/usr/include/boost/test/unit_test.hpp:63: undefined reference to `boost::unit_test::unit_test_main(bool (*)(), int, char**)'
+collect2: error: ld returned 1 exit status
+Makefile:626: recipe for target 'TestApp' failed
+make[2]: *** [TestApp] Error 1
+make[2]: Leaving directory '/home/zyong/alan/src'
+Makefile:946: recipe for target 'check-am' failed
+make[1]: *** [check-am] Error 2
+make[1]: Leaving directory '/home/zyong/alan/src'
+Makefile:415: recipe for target 'check-recursive' failed
+make: *** [check-recursive] Error 1
+[zyong@localhost alan]$ 
+

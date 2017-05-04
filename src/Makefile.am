@@ -1,9 +1,14 @@
-EXTRA_DIST = GameWorld.h GameAssetManager.h GameAsset.h CubeAsset.h
+EXTRA_DIST = GameWorld.h GameAssetManager.h GameAsset.h CubeAsset.h  SFBoundingBox.h SFMath.h
 
 bin_PROGRAMS = shaderexample
-shaderexample_SOURCES = main.cc GameWorld.cc GameAssetManager.cc CubeAsset.cc
+shaderexample_SOURCES = main.cc GameWorld.cc GameAssetManager.cc CubeAsset.cc SFBoundingBox.cc
 
 AM_CPPFLAGS = -DGL_GLEXT_PROTOTYPES -DGL3_PROTOTYPES
 AM_CPPFLAGS += -std=c++11
 AM_CPPFLAGS += $(gl_CFLAGS) $(glew_CFLAGS) $(sdl2_CFLAGS) $(BOOST_CPPFLAGS)
 LIBS += $(gl_LIBS) $(glew_LIBS) $(sdl2_LIBS) $(BOOST_THREAD_LIBS) $(BOOST_PROGRAM_OPTIONS_LIBS)
+
+TESTS = TestApp
+check_PROGRAMS = $(TESTS)
+TestApp_SOURCES = test.cpp
+TestApp_LDADD = $(BOOST_UNIT_TEST_FRAMEWORK_LIBS)
